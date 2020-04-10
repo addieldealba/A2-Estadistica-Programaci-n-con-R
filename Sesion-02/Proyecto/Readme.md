@@ -25,15 +25,25 @@ Escriba una función llamada 'medio contaminante' que calcule la media de un con
 
 . Puede ver algunos resultados de ejemplo de esta función a continuación. La función que escriba debería poder coincidir con esta salida. Guarde su código en un archivo llamado pollutantmean.R.
 
+   ![Pollutantmean](../images/pollutantworking.png)
+
 2- Parte 2
-Escriba una función que lea un directorio lleno de archivos e informe el número de casos completamente observados en cada archivo de datos. La función debe devolver un marco de datos donde la primera columna es el nombre del archivo y la segunda columna es el número de casos completos. Sigue un prototipo de esta función
-s
+Escriba una función que lea un directorio lleno de archivos e informe el número de casos completamente observados en cada archivo de datos. La función debe devolver un marco de datos donde la primera columna es el nombre del archivo y la segunda columna es el número de casos completos. Sigue un prototipo de esta funcións
+
+   ![Pollutantmean](../images/completeargs.png)
+
 Puede ver algunos resultados de ejemplo de esta función a continuación. La función que escriba debería poder coincidir con esta salida. Guarde su código en un archivo llamado complete.R. Para ejecutar el script de envío para esta parte, asegúrese de que su directorio de trabajo tenga el archivo complete.R en él.
+
+   ![Pollutantmean](../images/completeworking.png)
 
 3- Parte 3
 Escriba una función que tome un directorio de archivos de datos y un umbral para casos completos y calcule la correlación entre sulfato y nitrato para ubicaciones de monitoreo donde el número de casos completamente observados (en todas las variables) es mayor que el umbral. La función debe devolver un vector de correlaciones para los monitores que cumplen con el requisito de umbral. Si ningún monitor cumple con el requisito de umbral, entonces la función debe devolver un vector numérico de longitud 0. A continuación se muestra un prototipo de esta función.
 
+   ![Pollutantmean](../images/corrargs.png)
+
 Para esta función, deberá utilizar la función 'cor' en R, que calcula la correlación entre dos vectores. Lea la página de ayuda para esta función a través de '? Cor' y asegúrese de saber cómo usarla.
 Puede ver algunos resultados de ejemplo de esta función a continuación. La función que escriba debería poder coincidir aproximadamente con esta salida. Tenga en cuenta que debido a cómo R redondea y presenta números de coma flotante, la salida que genera puede diferir ligeramente de la salida de ejemplo. Guarde su código en un archivo llamado corr.R. Para ejecutar el script de envío para esta parte, asegúrese de que su directorio de trabajo tenga el archivo corr.R.
+
+   ![Pollutantmean](../images/corrworking.png)
 
 
