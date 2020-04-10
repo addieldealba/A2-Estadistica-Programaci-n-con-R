@@ -21,6 +21,8 @@ Para esta asignación de programación, necesitará descomprimir este archivo y 
 1- Parte 1
 Escriba una función llamada 'medio contaminante' que calcule la media de un contaminante (sulfato o nitrato) en una lista específica de monitores. La función 'contaminante' toma tres argumentos: 'directorio', 'contaminante' e 'id'. Dados los números de identificación de un monitor vectorial, 'contaminante medio' lee que monitorea los datos de materia particulada del directorio especificado en el argumento 'directorio' y devuelve la media del contaminante en todos los monitores, ignorando cualquier valor faltante codificado como NA. Un prototipo de la función es el siguiente
 
+   ![Pollutantmean](../images/pollutantmeanargs.png)
+
 . Puede ver algunos resultados de ejemplo de esta función a continuación. La función que escriba debería poder coincidir con esta salida. Guarde su código en un archivo llamado pollutantmean.R.
 
 2- Parte 2
