@@ -1,5 +1,5 @@
 `Data Science` > [`Programacion con R`]
-## Dplyr
+## Scripts con R
 
 ### OBJETIVO
   - Que el alumno sepa resolver tareas interesantes y complejas para la lectura y análisis de archivos con scripts en R
