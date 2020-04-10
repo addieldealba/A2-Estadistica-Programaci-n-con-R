@@ -13,6 +13,7 @@ El archivo zip que contiene los datos se puede descargar aquí:
 ### RETO a resolver por el alumno
 
 El archivo zip contiene 332 archivos de valores separados por comas (CSV) que contienen datos de monitoreo de la contaminación del aire de partículas finas (PM) en 332 ubicaciones en los Estados Unidos. Cada archivo contiene datos de un solo monitor y el número de identificación de cada monitor está contenido en el nombre del archivo. Por ejemplo, los datos para el monitor 200 están contenidos en el archivo "200.csv". Cada archivo contiene tres variables:
+
 Fecha: la fecha de la observación en formato AAAA-MM-DD (año-mes-día)
 sulfato: el nivel de sulfato de PM en el aire en esa fecha (medido en microgramos por metro cúbico) de
 nitrato: el nivel de nitrato de PM en el aire en esa fecha (medido en microgramos por metro cúbico)
@@ -41,7 +42,7 @@ Escriba una función que tome un directorio de archivos de datos y un umbral par
 
    ![Pollutantmean](../images/corrargs.png)
 
-Para esta función, deberá utilizar la función 'cor' en R, que calcula la correlación entre dos vectores. Lea la página de ayuda para esta función a través de '? Cor' y asegúrese de saber cómo usarla.
+Para esta función, deberá utilizar la función 'cor' en R, que calcula la correlación entre dos vectores. Lea la página de ayuda para esta función a través de '?Cor' y asegúrese de saber cómo usarla.
 Puede ver algunos resultados de ejemplo de esta función a continuación. La función que escriba debería poder coincidir aproximadamente con esta salida. Tenga en cuenta que debido a cómo R redondea y presenta números de coma flotante, la salida que genera puede diferir ligeramente de la salida de ejemplo. Guarde su código en un archivo llamado corr.R. Para ejecutar el script de envío para esta parte, asegúrese de que su directorio de trabajo tenga el archivo corr.R.
 
    ![Pollutantmean](../images/corrworking.png)
