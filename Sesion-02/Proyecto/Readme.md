@@ -8,7 +8,7 @@
 Datos
 El archivo zip que contiene los datos se puede descargar aquí:
 
- [DataSet Contaminantes en Aire](Sesion-02/Dataset/rprog_data_specdata.zip)
+ [DataSet Contaminantes en Aire](../Sesion-02/Dataset/rprog_data_specdata.zip)
 
 ### RETO a resolver por el alumno
 
