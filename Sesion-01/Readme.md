@@ -1,12 +1,14 @@
 [`Estadística con R`](../Readme.md) > `Sesión 01: Estadística R`
 
-## Work: Análisis Exploratorio de Datos - Análisis Univariado
+## Work: Programación: Funciones, Loops y Condiciones en R.
 
 ### OBJETIVOS 
-- Identificar si un dataframe tiene valores nulos.
-- Encontrar las medidas de centralidad, dispersión y distribución de un dataframe.  
-- Identificar los tipos de datos de un dataframe y filtrar a categóricos.  
-- Construir una tabla de frecuencias.  
+- Crear secuencias de código para iterar funciones y automatizar procesos.
+- Crear funciones que reciban parámetros.  
+- Usar la función IF ELSE para crear una variable condicionada al valor de otra.  
+- Usar la función FOR para crear un loop que nos llevara el resultado según la condición por la cual estemos filtrando la información.
+- Aprender a hacer un loop con WHILE.
+- Usar la función unique para obtener los resultados únicos según la condición por la cual estemos filtrando la información.
 
 #### ORGANIZACION DE LA CLASE 
 
