@@ -11,8 +11,10 @@
 1. Usar la carpeta de trabajo `Sesion02/Ejemplo-02`
 
 #### DESARROLLO
-
-
+Limpiamos el workspace como buena práctica de programación:
+```{r}
+rm(list=ls())
+```
 Cargamos el paquete que nos permitira hacer el ejercicio   
 ```{r}
 library(dplyr)
