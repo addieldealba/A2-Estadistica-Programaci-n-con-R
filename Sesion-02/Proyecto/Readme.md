@@ -8,7 +8,7 @@
 Datos
 El archivo zip que contiene los datos se puede descargar aquí:
 
- ![Creando usuario](datasets/rprog_data_specdata.zip)
+ [Creando usuario](datasets/rprog_data_specdata.zip)
 
 ### RETO a resolver por el alumno
 
