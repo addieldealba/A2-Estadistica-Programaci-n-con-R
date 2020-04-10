@@ -3,10 +3,13 @@
 ## Work: Análisis Exploratorio de Datos - Análisis Univariado
 
 ### OBJETIVOS 
-- Identificar si un dataframe tiene valores nulos.
-- Encontrar las medidas de centralidad, dispersión y distribución de un dataframe.  
-- Identificar los tipos de datos de un dataframe y filtrar a categóricos.  
-- Construir una tabla de frecuencias.  
+
+- Entender el concepto de script en R
+- Utilizar un script para análisis de archivos
+- Tomar un data set real y hacer preguntas interesantes sobre los datos
+- Programar funciones para tareas comunes de lectura, escritura  de archivos con loops en R
+- Saber como revisar (debug) un script en R paso a paso
+- Utilizar funciones matemáticas en R 
 
 #### ORGANIZACION DE LA CLASE 
 
