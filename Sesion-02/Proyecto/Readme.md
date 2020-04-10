@@ -1,4 +1,3 @@
-`Data Science` > [`Programacion con R`]
 ## Scripts con R
 
 ### OBJETIVO
@@ -8,7 +7,8 @@
 
 Datos
 El archivo zip que contiene los datos se puede descargar aquí:
-rprog_data_specdata.zip
+
+ ![Creando usuario](datasets/rprog_data_specdata.zip)
 
 ### RETO a resolver por el alumno
 
