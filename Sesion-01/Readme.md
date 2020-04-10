@@ -12,22 +12,28 @@
 
 #### ORGANIZACION DE LA CLASE 
 
-- Medidas de Centralidad
+- Manipulación de objetos
 	- [Ejemplo 01](Ejemplo-01)
 
-- Medidas de Dispersión
-	- [Ejemplo 02](Ejemplo-01)
+- Librería dplyr y condicionales
+	- [Ejemplo 02](Ejemplo-02)
 	- [Reto 02](Reto-01)
 
-- Medidas de Distribución
+- dplyr en una sola instrucción
 	- [Ejemplo 03](Ejemplo-03)
-	- [Reto 02](Reto-02)
-
-- Tabla de Frecuencias
-	- [Ejemplo 04](Ejemplo-04)
 	- [Reto 03](Reto-03)
 
+- Funciones, condiciones y loops
+	- [Ejemplo 04](Ejemplo-04)
+	- [Reto 04](Reto-04)
 
+- Funciones, condiciones y loops
+	- [Ejemplo 05](Ejemplo-05)
+	- [Reto 05](Reto-05)
+	
+- Funciones, condiciones, loops y función unique
+	- [Ejemplo 06](Ejemplo-06)
+	- [Reto 06](Reto-06)
 
 
 
