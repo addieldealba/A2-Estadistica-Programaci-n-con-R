@@ -36,6 +36,6 @@ Ahora vamos a replicar la funcionalidad de la funcion mean(), creando nuestra pr
 ```{r}
 my_mean <- function(my_vector) {
   sum(my_vector)/length(my_vector)
-  # Recuera: la ultima expresion evaluada es lo que regresa R en sus funciones
+  # Recuerda: la ultima expresion evaluada es lo que regresa R en sus funciones
 }
 ```
