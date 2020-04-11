@@ -31,6 +31,12 @@ Si desea ver el código fuente de cualquier función, solo escriba el nombre de 
 ```{r}
 boring_function
 ```
+
+### Ahora hagamos un Script con R
+
+Para esto hay que abrir el editor de scripts con un script nuevo:
+![RScript](../images/RScript.png)
+
 Ahora vamos a replicar la funcionalidad de la funcion mean(), creando nuestra propia función que haga lo mismo que mean
 ```{r}
 my_mean <- function(my_vector) {
