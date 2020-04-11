@@ -25,9 +25,10 @@
 
 #### REQUISITOS EJEMPLO 2
 1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion02/Ejemplo-01`
+1. Usar la carpeta de trabajo `Sesion02/Ejemplo-02`
 
 #### DESARROLLO EJEMPLO 2
+En esta sección vamos a crear varias funciones con tareas de programación intermedia.
 
 Limpiamos el workspace como buena práctica de programación:
 ```{r}
