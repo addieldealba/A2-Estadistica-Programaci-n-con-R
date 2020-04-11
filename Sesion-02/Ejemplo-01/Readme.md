@@ -1,5 +1,5 @@
 `Data Science` > [`Programacion con R`]
-## Scripts con R
+## Sesion-02 - Scripts con R - Ejemplo-01
 
 ### OBJETIVO
 - Generar un script en R con tareas complejas implementadas mediante funciones
