@@ -1,6 +1,4 @@
-[`Estadística con R`](../Readme.md) > `Sesión 01: Estadística R`
-
-## Work: Análisis Exploratorio de Datos - Análisis Univariado
+## Work: 
 
 ### OBJETIVOS 
 
