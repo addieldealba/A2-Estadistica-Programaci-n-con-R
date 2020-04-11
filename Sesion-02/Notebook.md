@@ -1,4 +1,4 @@
-[`Estadística con R`](../Readme.md) > `Sesión 01: Estadística R`
+[`Estadística con R`]> `General Notebooks: Estadística y Programacion con R`
 
 ## Work: Scripts con R
 
