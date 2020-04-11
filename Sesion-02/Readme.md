@@ -13,22 +13,26 @@
 
 #### ORGANIZACION DE LA CLASE 
 
-- Medidas de Centralidad
+- Creación de un script en R con funciones y argumentos 
 	- [Ejemplo 01](Ejemplo-01)
 
-- Medidas de Dispersión
-	- [Ejemplo 02](Ejemplo-01)
-	- [Reto 02](Reto-01)
-
-- Medidas de Distribución
-	- [Ejemplo 03](Ejemplo-03)
+- Funciones append, completecases, rbind, list.files, vector, tipos de acceso a valores en dataframes
+	- [Ejemplo 02](Ejemplo-02)
 	- [Reto 02](Reto-02)
 
-- Tabla de Frecuencias
-	- [Ejemplo 04](Ejemplo-04)
+- Creacion de funciones avanzadas con scripts en R
+	- [Ejemplo 03](Ejemplo-03)
 	- [Reto 03](Reto-03)
 
+- Funcion de correlacion y sus implementaciones en R
+	- [Ejemplo 04](Ejemplo-04)
+	- [Reto 04](Reto-04)
 
+- Revisar la ejecución y corregir errores en script medante debug
+	- [Ejemplo 05](Ejemplo-05)
+	- [Reto 05](Reto-05)
 
-
-
+- Proyecto
+	- [Presentación de Proyecto](Proyecto)
+- Postwork
+	- [Postwork](Postwork)
