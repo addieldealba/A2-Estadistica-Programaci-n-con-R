@@ -1,6 +1,4 @@
 `Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-02`] > [`Ejemplo-05`] 
-## Sesion-02 - Scripts con R - Ejemplo-01
-
 ### OBJETIVO
 - Generar un script en R con tareas complejas implementadas mediante funciones
 
