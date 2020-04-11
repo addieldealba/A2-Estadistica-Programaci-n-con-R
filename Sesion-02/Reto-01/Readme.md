@@ -1,10 +1,8 @@
 `Data Science` > [`Programacion con R`]
-## Dplyr
+## Scripts con R - Sesion-02 - Reto-01
 
 ### OBJETIVO
-- Aprenderas a cargar un package
-- Aprenderas a usar dplyr
-- Aprenderas a seleccionar y filtrar informacion 
+- Generar un script en R con tareas complejas implementadas mediante funciones
 
 #### REQUISITOS
 1. Contar con R studio.
@@ -12,30 +10,41 @@
 
 #### DESARROLLO
 
-
-Cargamos el paquete que nos permitira hacer el ejercicio   
+Limpiamos el workspace como buena práctica de programación:
 ```{r}
-library(dplyr)
+rm(list=ls())
+```
+Como ya conocemos, así es como se define una función en R:
+```{r}
+function_name <- function(arg1, arg2)
+{
+#	Manipular argumentos arg1 y arg2 de cierta forma y regresar un valor
+}
+```
+Crea una funcion sencilla que regrese el valor del argumento:  
+```{r}
+boring_function <- function(x) {
+  x
+}
+```
+Si desea ver el código fuente de cualquier función, solo escriba el nombre de la función sin argumentos ni paréntesis. Probemos esto con la función que acaba de crear. Teclea: boring_function para ver su código fuente.
+```{r}
+boring_function
 ```
 
-Vamos a usar la informacion de mtcars, ya disponible en R 
+### Ahora hagamos un Script con R
+
+Para esto hay que abrir el editor de scripts con un script nuevo:
+![RScript](../images/RScript.png)
+
+Ahora vamos a replicar la funcionalidad de la funcion mean(), creando nuestra propia función que haga lo mismo que mean()
 ```{r}
-head(mtcars)
+my_mean <- function(my_vector) {
+  sum(my_vector)/length(my_vector)
+  # Recuerda: la ultima expresion evaluada es lo que regresa R en sus funciones
+}
 ```
-
-Creamos la variable mtcars para poder hacer operaciones sobre esos datos 
+En el script, probemos que la función haga el promedio pasandolé un vector de prueba c(2,4,5) y verifiquemos el resultado.
 ```{r}
-mtcars <- mtcars 
-```
-
-Selecciona las variables nombre del carro, millas por galon y horse power 
-```{r}
-select(mtcars, 'nombre carro', mpg, hp) 
-```
-Usamos las comillas para que detecte que es una palabra compuesta 
-
-
-Filtra por aquellos vehiculos que tengan hp mayor a 200 y su nombre contenga la letra "a" 
-```{r}
-filter(mtcars, grepl("a", 'nombre carro') & hp > 200 )
+my_mean(c(2,4,5))
 ```
