@@ -18,8 +18,7 @@ Como ya conocemos, así es como se define una función en R:
 ```{r}
 function_name <- function(arg1, arg2)
 {
-#	Manipular argumentos arg1 y arg2 de cierta forma
-# y regresar un valor
+#	Manipular argumentos arg1 y arg2 de cierta forma y regresar un valor
 }
 ```
 Crea una funcion sencilla que regrese el valor del argumento:  
