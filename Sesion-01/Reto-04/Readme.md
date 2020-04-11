@@ -8,7 +8,7 @@
 
 #### REQUISITOS
 1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion03/Reto-01`
+1. Usar la carpeta de trabajo `Sesion01/Reto-04`
 
 #### DESARROLLO
 
