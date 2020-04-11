@@ -1,4 +1,4 @@
-`Data Science` > [`Programacion con R`]
+`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-01`] > [`Reto-02`] 
 ## Programacion orientada a objetos  
 
 ### OBJETIVO
@@ -8,7 +8,7 @@
 
 #### REQUISITOS
 1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion02/Reto-02`
+1. Usar la carpeta de trabajo `Sesion01/Reto-02`
 
 #### DESARROLLO
 Importamos la tabla de Ecobici con la que hemos estado trabajando (hint: read_excel). A nuestra tabla la llamaremos "ecobici".
