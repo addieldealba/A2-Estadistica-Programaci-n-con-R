@@ -2,7 +2,7 @@
 
 ## Work: Scripts con R
 
-### OBJETIVOS 
+### OBJETIVOS DE LA SESIÓN
 
 - Entender el concepto de script en R
 - Utilizar un script para análisis de archivos
@@ -11,7 +11,7 @@
 - Saber como revisar (debug) un script en R paso a paso
 - Utilizar funciones matemáticas en R 
 
-#### ORGANIZACION DE LA CLASE 
+#### ORGANIZACION DE LA SESIÓN
 
 - Creación de un script en R con funciones y argumentos 
 	- [Ejemplo 01](Ejemplo-01)
@@ -20,19 +20,16 @@
 	- [Ejemplo 02](Ejemplo-02)
 	- [Reto 02](Reto-02)
 
-- Creacion de funciones avanzadas con scripts en R
-	- [Ejemplo 03](Ejemplo-03)
-	- [Reto 03](Reto-03)
+### OBJETIVO EJEMPLO 2
+- Generar un script en R con tareas complejas implementadas mediante funciones
 
-- Funcion de correlacion y sus implementaciones en R
-	- [Ejemplo 04](Ejemplo-04)
-	- [Reto 04](Reto-04)
+#### REQUISITOS EJEMPLO 2
+1. Contar con R studio.
+1. Usar la carpeta de trabajo `Sesion02/Ejemplo-01`
 
-- Revisar la ejecución y corregir errores en script medante debug
-	- [Ejemplo 05](Ejemplo-05)
-	- [Reto 05](Reto-05)
+#### DESARROLLO EJEMPLO 2
 
-- Proyecto
-	- [Presentación de Proyecto](Proyecto)
-- Postwork
-	- [Postwork](Postwork)
+Limpiamos el workspace como buena práctica de programación:
+```{r}
+rm(list=ls())
+```
