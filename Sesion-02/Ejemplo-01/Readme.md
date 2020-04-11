@@ -10,6 +10,10 @@
 
 #### DESARROLLO
 
+Limpiamos el workspace como buena práctica de programación:
+```{r}
+rm(list=ls())
+```
 Como ya conocemos, así es como se define una función en R:
 ```{r}
 function_name <- function(arg1, arg2)
@@ -18,15 +22,12 @@ function_name <- function(arg1, arg2)
 # y regresar un valor
 }
 ```
-Limpiamos el workspace como buena práctica de programación:
+Crea una funcion sencilla que regrese el valor del argumento:  
 ```{r}
-rm(list=ls())
+boring_function <- function(x) {
+  x
+}
 ```
-Cargamos el paquete que nos permitira hacer el ejercicio   
-```{r}
-library(dplyr)
-```
-
 Vamos a usar la informacion de mtcars, ya disponible en R 
 ```{r}
 head(mtcars)
