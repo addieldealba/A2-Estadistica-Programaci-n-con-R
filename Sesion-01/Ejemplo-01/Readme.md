@@ -1,4 +1,4 @@
-`Data Science` > [`Programacion con R`]
+`Estadistica-Programacion-con-R` > [`Programacion con R`] 
 ## Manipulación de objetos
 
 ### OBJETIVO
