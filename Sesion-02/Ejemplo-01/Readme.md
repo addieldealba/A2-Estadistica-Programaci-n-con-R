@@ -2,7 +2,7 @@
 ## Scripts con R
 
 ### OBJETIVO
-- Generar un script en R con tareas complejas
+- Generar un script en R con tareas complejas implementadas mediante funciones
 
 #### REQUISITOS
 1. Contar con R studio.
