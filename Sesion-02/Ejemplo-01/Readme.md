@@ -1,16 +1,22 @@
 `Data Science` > [`Programacion con R`]
-## Dplyr
+## Scripts con R
 
 ### OBJETIVO
-- Aprenderas a cargar un package
-- Aprenderas a usar dplyr
-- Aprenderas a seleccionar y filtrar informacion 
+- Generar un script en R con tareas complejas
 
 #### REQUISITOS
 1. Contar con R studio.
 1. Usar la carpeta de trabajo `Sesion02/Ejemplo-02`
 
 #### DESARROLLO
+
+Como ya conocemos, así es como se define una función en R:
+```{r}
+function_name <- function(arg1, arg2){
+#	Manipular argumentos arg1 y arg2 de cierta forma
+# y regresar un valor
+}
+```
 Limpiamos el workspace como buena práctica de programación:
 ```{r}
 rm(list=ls())
