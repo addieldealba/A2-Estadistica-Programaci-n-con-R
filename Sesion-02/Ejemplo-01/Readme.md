@@ -32,25 +32,10 @@ Si desea ver el código fuente de cualquier función, solo escriba el nombre de 
 ```{r}
 boring_function
 ```
-
-Vamos a usar la informacion de mtcars, ya disponible en R 
+Ahora vamos a replicar la funcionalidad de la funcion mean(), creando nuestra propia función que haga lo mismo que mean
 ```{r}
-
-```
-
-Creamos la variable mtcars para poder hacer operaciones sobre esos datos 
-```{r}
-mtcars <- mtcars 
-```
-
-Selecciona las variables nombre del carro, millas por galon y horse power 
-```{r}
-select(mtcars, 'nombre carro', mpg, hp) 
-```
-Usamos las comillas para que detecte que es una palabra compuesta 
-
-
-Filtra por aquellos vehiculos que tengan hp mayor a 200 y su nombre contenga la letra "a" 
-```{r}
-filter(mtcars, grepl("a", 'nombre carro') & hp > 200 )
+my_mean <- function(my_vector) {
+  sum(my_vector)/length(my_vector)
+  # Recuera: la ultima expresion evaluada es lo que regresa R en sus funciones
+}
 ```
