@@ -28,9 +28,14 @@ boring_function <- function(x) {
   x
 }
 ```
+Si desea ver el código fuente de cualquier función, solo escriba el nombre de la función sin argumentos ni paréntesis. Probemos esto con la función que acaba de crear. Teclea: boring_function para ver su código fuente.
+```{r}
+boring_function
+```
+
 Vamos a usar la informacion de mtcars, ya disponible en R 
 ```{r}
-head(mtcars)
+
 ```
 
 Creamos la variable mtcars para poder hacer operaciones sobre esos datos 
