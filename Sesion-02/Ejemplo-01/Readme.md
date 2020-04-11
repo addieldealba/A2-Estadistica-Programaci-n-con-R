@@ -37,7 +37,7 @@ boring_function
 Para esto hay que abrir el editor de scripts con un script nuevo:
 ![RScript](../images/RScript.png)
 
-Ahora vamos a replicar la funcionalidad de la funcion mean(), creando nuestra propia función que haga lo mismo que mean
+Ahora vamos a replicar la funcionalidad de la funcion mean(), creando nuestra propia función que haga lo mismo que mean()
 ```{r}
 my_mean <- function(my_vector) {
   sum(my_vector)/length(my_vector)
