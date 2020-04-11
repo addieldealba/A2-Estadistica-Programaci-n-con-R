@@ -44,3 +44,8 @@ my_mean <- function(my_vector) {
   # Recuerda: la ultima expresion evaluada es lo que regresa R en sus funciones
 }
 ```
+En el script, probemos que la función haga el promedio pasandolé un vector de prueba c(2,4,5) y verifiquemos el resultado.
+```{r}
+my_mean(c(2,4,5)
+}
+```
