@@ -1,4 +1,4 @@
-`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-02`] > [`Ejemplo-02`] 
+`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-01`] > [`Ejemplo-02`] 
 
 ## Dplyr
 
@@ -9,7 +9,7 @@
 
 #### REQUISITOS
 1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion02/Ejemplo-02`
+1. Usar la carpeta de trabajo `Sesion01/Ejemplo-02`
 
 #### DESARROLLO
 
