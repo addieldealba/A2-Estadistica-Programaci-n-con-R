@@ -21,19 +21,19 @@
 
 - dplyr en una sola instrucción
 	- [Ejemplo 03](Ejemplo-03)
-	- [Reto 03](Reto-03)
+	- [Reto 02](Reto-02)
 
 - Funciones, condiciones y loops
 	- [Ejemplo 04](Ejemplo-04)
-	- [Reto 04](Reto-04)
+	- [Reto 03](Reto-03)
 
 - Funciones, condiciones y loops
 	- [Ejemplo 05](Ejemplo-05)
-	- [Reto 05](Reto-05)
+	- [Reto 04](Reto-04)
 	
 - Funciones, condiciones, loops y función unique
 	- [Ejemplo 06](Ejemplo-06)
-	- [Reto 06](Reto-06)
+	- [Reto 05](Reto-05)
 
 
 
