@@ -1,4 +1,4 @@
-`Data Science` > [`Programacion con R`]
+`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-01`] > [`Reto-01`] 
 ## Programacion orientada a objetos  
 
 ### OBJETIVO
@@ -7,11 +7,10 @@
 
 #### REQUISITOS
 1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion02/Reto-01`
+1. Usar la carpeta de trabajo `Sesion01/Reto-01`
 
 #### DESARROLLO
 Importamos el dataset de **Spotify**, desplegaremos su estructura e identifiaremos la variable del tiempo que se encuentra en **ms** , se realizaran las operaciones necesarias para convertir el valor a **minutos**
 
-[Solución](solucion)
 
 

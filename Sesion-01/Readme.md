@@ -1,4 +1,4 @@
-[`Estadística con R`](../Readme.md) > `Sesión 01: Estadística R`
+`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-01`]  
 
 ## Work: Programación: Funciones, Loops y Condiciones en R.
 
@@ -14,10 +14,10 @@
 
 - Manipulación de objetos
 	- [Ejemplo 01](Ejemplo-01)
-
+	- [Reto 01](Reto-01)
 - Librería dplyr y condicionales
 	- [Ejemplo 02](Ejemplo-02)
-	- [Reto 02](Reto-01)
+	- [Reto 02](Reto-02)
 
 - dplyr en una sola instrucción
 	- [Ejemplo 03](Ejemplo-03)

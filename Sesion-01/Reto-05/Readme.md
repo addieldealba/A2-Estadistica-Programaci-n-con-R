@@ -1,4 +1,4 @@
-`Data Science` > [`Programacion con R`]
+`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-02`] > [`Reto-05`] 
 ## Funciones, condiciones y loops
 
 ### OBJETIVO
@@ -6,7 +6,7 @@
 
 #### REQUISITOS
 1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion03/Reto-02`
+1. Usar la carpeta de trabajo `Sesion01/Reto-05`
 
 #### DESARROLLO
 ### Utilizando el Dataset de airquality.

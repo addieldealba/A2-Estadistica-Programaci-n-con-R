@@ -1,4 +1,4 @@
-`Data Science` > [`Programacion con R`]
+`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-01`] > [`Reto-06`] 
 ## Funciones, condiciones y loops
 
 ### OBJETIVO
@@ -6,7 +6,7 @@
 
 #### REQUISITOS
 1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion03/Reto-03`
+1. Usar la carpeta de trabajo `Sesion01/Reto-06`
 
 #### DESARROLLO
 Seguimos trabajando con la base de ecobici. Ahora queremos comprobar la consistencia entre nombres de Colonias y Codigos Postales. Para ello, usaremos la funcion unique, y llevaremos todos los posibles Codigos Postales de aquellas colonias que se llamen "Roma Norte".

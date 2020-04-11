@@ -1,4 +1,4 @@
-`Data Science` > [`Programacion con R`]
+`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-01`] > [`Ejemplo-03`] 
 ## Dplyr en un solo comando
 
 ### OBJETIVO
@@ -7,7 +7,7 @@
 
 #### REQUISITOS
 1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion02/Ejemplo-03`
+1. Usar la carpeta de trabajo `Sesion01/Ejemplo-03`
 
 #### DESARROLLO
 Con la ayuda del package dplyr, haremos los siguientes comandos con una sola orden (Hint: usar "%>%")
