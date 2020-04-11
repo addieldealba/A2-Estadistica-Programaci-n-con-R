@@ -1,4 +1,4 @@
-[`Estadística con R`](../Readme.md) > `Sesión 01: Estadística R`
+`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-01`]  
 
 ## Work: Programación: Funciones, Loops y Condiciones en R.
 
