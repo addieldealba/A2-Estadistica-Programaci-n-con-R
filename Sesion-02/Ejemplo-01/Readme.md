@@ -1,4 +1,4 @@
-`Data Science` > [`Programacion con R`]
+`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-02`] > [`Ejemplo-01`] 
 ## Sesion-02 - Scripts con R - Ejemplo-01
 
 ### OBJETIVO
@@ -6,7 +6,7 @@
 
 #### REQUISITOS
 1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion02/Ejemplo-02`
+1. Usar la carpeta de trabajo `Sesion02/Ejemplo-01`
 
 #### DESARROLLO
 
