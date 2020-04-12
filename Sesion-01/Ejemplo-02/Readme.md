@@ -1,6 +1,6 @@
 `Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-01`] > [`Ejemplo-02`] 
 
-## Dplyr
+## dplyr y condicionales
 
 ### OBJETIVO
 - Aprenderas a cargar un package
