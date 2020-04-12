@@ -7,8 +7,7 @@
 
 ### REQUISITOS
 
-Datos
-El archivo zip que contiene los datos se puede descargar aquí:
+1. Datos: El archivo zip que contiene los datos se puede descargar aquí:
 
  [DataSet Contaminantes en Aire](../Dataset/rprog_data_specdata.zip)
 
