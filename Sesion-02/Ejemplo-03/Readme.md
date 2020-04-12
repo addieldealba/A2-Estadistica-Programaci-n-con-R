@@ -73,7 +73,7 @@ Entonces podría usar este operador binario como `4% mult_add_one% 5` que evalua
 
 ¡Escriba su propio operador binario a continuación desde cero! Tu binario El operador debe llamarse %p% para que la expresión:
 ```{r}
-"Bien"% p% "¡trabajo!"
+"Bien" %p% "¡trabajo!"
 ```
 evaluará a: "¡Buen trabajo!"
 
