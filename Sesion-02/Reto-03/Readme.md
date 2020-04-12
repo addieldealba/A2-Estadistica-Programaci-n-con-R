@@ -1,9 +1,9 @@
 `Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-02`] > [`Reto-03`] 
 
 ### OBJETIVO RETO 3
-- Aprenderas a 
-- Aprenderas a 
-- Aprenderas a 
+- Aprenderas a abrir e utilizar archivos con datos en R
+- Aprenderas a utilizar la función rbind()
+- Aprenderas a utilizar la función complete.cases()
 
 #### REQUISITOS RETO 3
 1. Contar con R studio.
@@ -12,6 +12,6 @@
 
 #### RETO 3
 1. Descomprimir el archivo zip :  [DataSet Contaminantes en Aire](../Dataset/rprog_data_specdata.zip) y seleccionar 2 de los archivos, de preferencia el primero 000.csv y 001.csv
-2. Utilizar la funcion append() con estos dos archivos y ver el resultado
-3. Utilizar la funcion complete.cases() y hacer un dataframe de 2 x 2 que muestre en 1 columna el número de archivo y en otra la cantidad de casos sin NA es decir casos completos.
+2. Utilizar la funcion rbind() con estos dos archivos y ver el resultado arrojado.
+3. Utilizar la funcion complete.cases() con estos dos archivos y ver el resultado arrojado.
 
