@@ -1,41 +1,38 @@
 `Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-02`] > [`Reto-02`] 
-## Dplyr
+### OBJETIVO RETO 2
+- Generar un script en R con tareas complejas implementadas mediante funciones
 
-### OBJETIVO
-- Aprenderas a cargar un package
-- Aprenderas a usar dplyr
-- Aprenderas a seleccionar y filtrar informacion 
-
-#### REQUISITOS
+#### REQUISITOS RETO 2
 1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion02/Reto-02`
+1. Usar la carpeta de trabajo `Sesion02/Ejemplo-02`
 
-#### DESARROLLO
+#### DESARROLLO RETO 2
+En esta sección vamos a crear varias funciones con tareas de programación intermedia.
 
+Para esto hay que abrir el editor de scripts con un script nuevo:
+![RScript](../images/RScript.png)
 
-Cargamos el paquete que nos permitira hacer el ejercicio   
+Limpiamos el workspace como buena práctica de programación:
 ```{r}
-library(dplyr)
+rm(list=ls())
 ```
-
-Vamos a usar la informacion de mtcars, ya disponible en R 
+Vas a escribir una función llamada remainder, remainder() tomará dos argumentos: "num" y "divisor" donde "num" se divide por "divisor" y se devuelve el resto. Imagina que generalmente desea saber el residuo cuando se divide entre 2, por lo tanto, establece el valor predeterminado de "divisor" en 2 (por default del argumento). Asegurate de que "num" es el primer argumento y "divisor" es el segundo argumento.
+Sugerencia # 1: puede utilizar el operador de módulo %% para encontrar el resto.
+Ej: 7 %% 4 se evalúa como 3.
 ```{r}
-head(mtcars)
+remainder <- function(num, divisor=2) {
+  remainder <- num %% divisor
+  # Recuerda: El valor de la última expresión evaluada es lo que se regresá (return)! 
+}
 ```
+Hagamos algunas pruebas de la función restante. Ejecute remainder(5) y vea qué sucede.
+Tomemos un momento para examinar lo que acaba de suceder. Usted proporcionó un argumento para la función, y R hizo coincidir ese argumento con 'num' ya que 'num' es el primer argumento. El valor predeterminado para 'divisor' es 2, por lo que la función utilizó el valor predeterminado que proporcionó.
 
-Creamos la variable mtcars para poder hacer operaciones sobre esos datos 
+Ahora probemos la función restante proporcionando dos argumentos. Introduzca en el prompt > remainder(11, 5) y veamos qué pasa.
 ```{r}
-mtcars <- mtcars 
+remainder(11,5)
 ```
+También puede especificar explícitamente argumentos en una función. Cuando designa explícitamente un argumento valores por nombre, el orden de los argumentos deja de ser importante. Puedes probar esto escribiendo: remainder(divisor = 11, num = 5).
+Como puede ver, hay una diferencia significativa entre el resto (11, 5) y el resto (divisor = 11, num = 5)!
 
-Selecciona las variables nombre del carro, millas por galon y horse power 
-```{r}
-select(mtcars, 'nombre carro', mpg, hp) 
-```
-Usamos las comillas para que detecte que es una palabra compuesta 
-
-
-Filtra por aquellos vehiculos que tengan hp mayor a 200 y su nombre contenga la letra "a" 
-```{r}
-filter(mtcars, grepl("a", 'nombre carro') & hp > 200 )
-```
+Con toda esta charla sobre argumentos, puede que se pregunte si hay una manera de ver los argumentos de la función (además de mirar la documentación). Afortunadamente, puedes usar la funciín args (). Escriba: args(remainder) para examinar los argumentos de la función remainder.
