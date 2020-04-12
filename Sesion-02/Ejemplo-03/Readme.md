@@ -47,11 +47,10 @@ alpha + beta
 ¿Alguna vez has jugado Mad Libs antes? La siguiente función construirá un oración de partes del discurso que proporcionas como argumentos. Escribiremos más de la función, pero necesitará desempaquetar los argumentos apropiados del elipses.
 ```{r}
 mad_libs <- function(...){
-  # Do your argument unpacking here!
+  # Haz el desempaquetamiento aquí
   
-  # Don't modify any code below this comment.
-  # Notice the variables you'll need to create in order for the code below to
-  # be functional!
+  # No modificar el código abajo
+  # Recuerda crear las variables necesarias
   paste("News from", place, "today where", adjective, "students took to the streets in protest of the new", noun, "being installed on campus.")
 }
 ```
