@@ -31,10 +31,10 @@ evaluate <- función (func, dat) {
   # Recuerde: ¡se devolverá la última expresión evaluada!
 }
 ```
-¡Hagamos girar su nueva función de evaluate()!. Utilice evaluate para encontrar la desviación estándar del vector c (1.4, 3.6, 7.9, 8.8).
+¡Hagamos girar su nueva función de evaluate()!. Utilice evaluate para encontrar la desviación estándar del vector c(1.4, 3.6, 7.9, 8.8).
 
 Escriba el siguiente comando y luego discutiremos cómo funciona: evalúe (function (x) {x + 1}, 6)
 
 Intente implementar evaluate() junto con una función anónima para devolver el primer elemento del vector c(8, 4, 0). Su función anónima solo debe tomar un argumento que debe ser una variable `x`. Esto debe de ser en la misma linea como en el ejemplo anterior.
 
-Ahora intente usar evaluate() junto con una función anónima para devolver el último elemento del vector c (8, 4, 0). Su función anónima solo debe tomar un argumento que debe ser un variable `x`.
+Ahora intente usar evaluate() junto con una función anónima para devolver el último elemento del vector c(8, 4, 0). Su función anónima solo debe tomar un argumento que debe ser un variable `x`.
