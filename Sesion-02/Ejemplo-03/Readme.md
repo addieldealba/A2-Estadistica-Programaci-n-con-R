@@ -26,5 +26,22 @@ Por ejemplo, la expresión `telegram(" Good "," morning ")` debe evaluarse como:
 telegram <- function(...){
  #escribe tu código aquí
 }
-
 ```
+Exploremos cómo "desempaquetar" argumentos de puntos suspensivos cuando usas el elipses como argumento en una función. A continuación tengo una función de ejemplo que se supone que agrega dos argumentos con nombres explícitos llamados alfa y beta.
+```{r}
+add_alpha_and_beta <- función (...) {
+# Primero debemos capturar los puntos suspensivos dentro de una lista
+# y luego asigne la lista a una variable. Vamos a nombrar esto
+# variable `args`.
+args <- list (...)
+#  Ahora vamos a suponer que hay dos argumentos con nombre dentro de los argumentos
+#  con los nombres `alpha` y` beta.` Podemos extraer argumentos con nombre de
+#  la lista de argumentos utilizando el nombre del argumento y los corchetes dobles. los
+¡La variable # # `args` es solo una lista regular después de todo!
+alpha <- args [["alpha"]]
+beta <- args [["beta"]]
+# Luego devolvemos la suma de alfa y beta. 
+alpha + beta
+}
+```
+¿Alguna vez has jugado Mad Libs antes? La siguiente función construirá un oración de partes del discurso que proporcionas como argumentos. Escribiremos más de la función, pero necesitará desempaquetar los argumentos apropiados del elipses.
