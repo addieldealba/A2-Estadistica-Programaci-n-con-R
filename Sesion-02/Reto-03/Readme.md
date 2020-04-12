@@ -12,6 +12,5 @@
 
 #### RETO 3
 1. Descomprimir el archivo zip :  [DataSet Contaminantes en Aire](../Dataset/rprog_data_specdata.zip) y seleccionar 2 de los archivos, de preferencia el primero 000.csv y 001.csv
-2. Utilizar la funcion rbind() con estos dos archivos y ver el resultado arrojado.
-3. Utilizar la funcion complete.cases() con estos dos archivos y ver el resultado arrojado.
+2. Utilizar la funcion complete.cases() con estos dos archivos y almacenar el resultado en un dataframe nuevo de 2x2 (nxn) donde la columna 1 tiene el número o nombre de archivo y la columna 2 la cantidad de casos completos (sin NA) de cada archivo.
 
