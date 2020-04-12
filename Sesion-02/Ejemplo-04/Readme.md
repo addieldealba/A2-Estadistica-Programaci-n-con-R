@@ -26,6 +26,7 @@ Conocer la funcion rbind()
 ```
 Utilizar la función rbind para juntar filas de dos archivos, pueden ser 001.csv y 002.csv de
 ```{r}
+readings = data.frame()
 readings <- rbind(readings, read.csv("001.csv))
 readings <- rbind(readings, read.csv("002.csv))
 ```
