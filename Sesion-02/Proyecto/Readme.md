@@ -1,6 +1,6 @@
 `Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-02`] > [`Proyecto`] 
 
-## Scripts con R
+## miniProyecto: Scripts con R
 
 ### OBJETIVO
   - Que el alumno sepa resolver tareas interesantes y complejas para la lectura y análisis de archivos con scripts en R
@@ -11,7 +11,7 @@
 
  [DataSet Contaminantes en Aire](../Dataset/rprog_data_specdata.zip)
 
-### RETO a resolver por el alumno
+### RETO a resolver por el ALUMNO
 
 El archivo zip contiene 332 archivos de valores separados por comas (CSV) que contienen datos de monitoreo de la contaminación del aire de partículas finas (PM) en 332 ubicaciones en los Estados Unidos. Cada archivo contiene datos de un solo monitor y el número de identificación de cada monitor está contenido en el nombre del archivo. Por ejemplo, los datos para el monitor 200 están contenidos en el archivo "200.csv". Cada archivo contiene tres variables:
 
