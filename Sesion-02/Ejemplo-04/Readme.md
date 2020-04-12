@@ -16,25 +16,28 @@ Conocer la funcion la funcion list.files()
 ```{r}
 ?list.files
 ```
-Utilizar la función list.files() para crear un listado de todos los archivos en la carpeta /specdata del data set del proyecto
+Utilizar la función list.files() para crear un listado de todos los archivo en: [DataSet Contaminantes en Aire](../Dataset/rprog_data_specdata.zip) en la carpeta /specdata del data set del miniproyecto en zip extraído en tu carpeta de trabajo
 ```{r}
-
+list.files("/specdata", full.names = TRUE)
 ```
 Conocer la funcion rbind() 
 ```{r}
 ?rbind
 ```
-Utilizar la función rbind para 
+Utilizar la función rbind para juntar filas de dos archivos, pueden ser 001.csv y 002.csv de
 ```{r}
-
+readings <- rbind(readings, read.csv("001.csv))
+readings <- rbind(readings, read.csv("002.csv))
 ```
 Conocer la funcion seq_along 
 ```{r}
 ?seg_along
 ```
-Utilizar la función seq_along
+Conocer un ejemplo de implementación de la función seq_along
 ```{r}
-
+for(i in seq_along(id)) {
+		
+	}
 ```
 Conocer la funcion vector 
 ```{r}
@@ -42,7 +45,7 @@ Conocer la funcion vector
 ```
 Utilizar la función vector
 ```{r}
-
+new_vector <- vector(mode = "numeric")
 ```
 Conocer la funcion as.vector 
 ```{r}
@@ -50,5 +53,5 @@ Conocer la funcion as.vector
 ```
 Utilizar la función as.vector 
 ```{r}
-
+as.vector(new.vector)
 `````
