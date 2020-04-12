@@ -11,7 +11,10 @@
 
 #### DESARROLLO EJEMPLO3
 
-Cargamos el paquete que nos permitira hacer el ejercicio   
-```{r}
+Conozcamos la funtion paste() , para ver su hoja de específicacion teclea ?paste, veremos su funcionamiento con un ejercicio:
+Como puede ver, el primer argumento de paste () es `...`, que se conoce como puntos suspensivos o simplemente punto-punto-punto. Los puntos suspensivos permiten pasar un número indefinido de argumentos a un función. En el caso de paste () se puede pasar cualquier número de cadenas como argumentos y paste () devolverá todas las cadenas combinadas en una sola cadena.
 
+Solo para ver cómo funciona paste (), escriba paste("Programming", "is", "fun!")
+```{r}
+paste("Programming", "is", "fun!")
 ```
