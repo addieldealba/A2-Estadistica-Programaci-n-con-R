@@ -54,3 +54,4 @@ Ahora probemos la función restante proporcionando dos argumentos. Introduzca en
 remainder(11,5)
 ```
 También puede especificar explícitamente argumentos en una función. Cuando designa explícitamente un argumento valores por nombre, el orden de los argumentos deja de ser importante. Puedes probar esto escribiendo: remainder(divisor = 11, num = 5).
+Como puede ver, hay una diferencia significativa entre el resto (11, 5) y el resto (divisor = 11, num = 5)!
