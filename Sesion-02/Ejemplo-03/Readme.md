@@ -54,3 +54,7 @@ mad_libs <- function(...){
   paste("News from", place, "today where", adjective, "students took to the streets in protest of the new", noun, "being installed on campus.")
 }
 ```
+Es hora de usar tu función mad_libs. Asegúrese de nombrar el lugar, el adjetivo y los argumentos sustantivos para que su función funcione.
+```{r}
+mad_libs("mad","as","it can be") # por ejemplo
+```
