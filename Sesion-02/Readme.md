@@ -24,11 +24,9 @@
 
 - Funciones rbind(), list.files(), vector(), tipos de acceso a valores en dataframesde correlacion y sus implementaciones en R
 	- [Ejemplo 04](Ejemplo-04)
-	- [Reto 04](Reto-04)
 
 - Revisar la ejecución y corregir errores en script medante debug
 	- [Ejemplo 05](Ejemplo-05)
-	- [Reto 05](Reto-05)
 
 - Proyecto
 	- [Presentación de Proyecto](Proyecto)
