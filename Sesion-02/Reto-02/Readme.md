@@ -16,9 +16,9 @@ Limpiamos el workspace como buena práctica de programación:
 ```{r}
 rm(list=ls())
 ```
-Termine la definición de la función a continuación para que si una función se pasa alargumento "func" y algunos datos (como un vector) se pasan al argumento dat la función evaluate() devolverá el resultado de que se haya pasado como argumento para func.
+Termine la definición de la función a continuación para que si una función se pasa al argumento "func" y algunos datos (como un vector) se pasan al argumento dat la función evaluate() devolverá el resultado de que se haya pasado como argumento para func.
 
-Sugerencias: Este ejercicio es un poco complicado, así que daré algunos ejemplos de cómo evaluate () debe actuar:
+Sugerencias: Este ejercicio es un poco complicado, así que daré algunos ejemplos de cómo evaluate() debe actuar:
 1. evaluate(sum, c(2, 4, 6)) debe evaluar a 12
 2. evaluate(median, c(7, 40, 9)) debe evaluar a 9
 3. evaluate(floor, 11.1) debe evaluar a 11
@@ -31,9 +31,9 @@ evaluate <- función (func, dat) {
   # Recuerde: ¡se devolverá la última expresión evaluada!
 }
 ```
-¡Hagamos girar su nueva función de evaluate()!. Utilice evaluate para encontrar la desviación estándar del vector c(1.4, 3.6, 7.9, 8.8).
+¡Hagamos girar su nueva función de evaluate()!. Utilice evaluate() para encontrar la desviación estándar del vector c(1.4, 3.6, 7.9, 8.8).
 
-Escriba el siguiente comando y luego discutiremos cómo funciona: evalúe (function (x) {x + 1}, 6)
+Escriba el siguiente comando y luego discutiremos cómo funciona: evalúe(function (x) {x + 1}, 6)
 
 Intente implementar evaluate() junto con una función anónima para devolver el primer elemento del vector c(8, 4, 0). Su función anónima solo debe tomar un argumento que debe ser una variable `x`. Esto debe de ser en la misma linea como en el ejemplo anterior.
 
