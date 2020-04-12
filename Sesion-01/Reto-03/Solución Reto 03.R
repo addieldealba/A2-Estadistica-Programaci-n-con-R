@@ -1,8 +1,11 @@
 
-library("readxl")
-ecobici <- as.data.frame(read_excel("ecobici.xls"))
-head(ecobici)
+library("dplyr")
+ecobici <- read_excel("ecobici.xls")
 
-unique(ecobici[ecobici$Colonia == 'Roma Norte',]$'Codigo Postal')
+ecobici <- ecobici %>% 
+  count(Colonia) %>% 
+  arrange(Colonia)
+
+head(ecobici)
 
 
