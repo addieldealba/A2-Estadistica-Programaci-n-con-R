@@ -34,3 +34,9 @@ Limpiamos el workspace como buena práctica de programación:
 ```{r}
 rm(list=ls())
 ```
+Vas a escribir una función llamada remainder, remainder() tomará dos argumentos: "num" y "divisor" donde "num" se divide por "divisor" y se devuelve el resto. Imagina que generalmente desea saber el residuo cuando se divide entre 2, por lo tanto, establece el valor predeterminado de "divisor" en 2 (por default del argumento). Asegurate de que "num" es el primer argumento y "divisor" es el segundo argumento.
+# Sugerencia # 1: puede utilizar el operador de módulo %% para encontrar el resto.
+# Ej: 7 %% 4 se evalúa como 3.
+```{r}
+
+```
