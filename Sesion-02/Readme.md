@@ -1,4 +1,4 @@
-## Work: 
+## Work: Utilización de Scripts en R con aplicación al análisis de datos desde archivos.
 
 ### OBJETIVOS 
 
