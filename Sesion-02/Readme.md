@@ -14,15 +14,15 @@
 - Creación de un script en R con funciones y argumentos 
 	- [Ejemplo 01](Ejemplo-01)
 
-- Funciones append, completecases, rbind, list.files, vector, tipos de acceso a valores en dataframes
+- Creación de funciones avanzadas con scripts en R
 	- [Ejemplo 02](Ejemplo-02)
 	- [Reto 02](Reto-02)
 
-- Creacion de funciones avanzadas con scripts en R
+- Funciones paste(), append(), completecases()
 	- [Ejemplo 03](Ejemplo-03)
 	- [Reto 03](Reto-03)
 
-- Funcion de correlacion y sus implementaciones en R
+- Funciones rbind(), list.files(), vector(), tipos de acceso a valores en dataframesde correlacion y sus implementaciones en R
 	- [Ejemplo 04](Ejemplo-04)
 	- [Reto 04](Reto-04)
 
