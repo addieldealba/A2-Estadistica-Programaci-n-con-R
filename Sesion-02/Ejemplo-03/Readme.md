@@ -64,12 +64,12 @@ En R puede definir sus propios operadores binarios. En el próximo ejemplo te mo
 
 Digamos que quería definir un operador binario que multiplicara dos números y luego agregó uno al producto. A continuación se muestra una implementación de ese operador:
 ```{r}
-"% mult_add_one%" <- función (izquierda, derecha) {
+"%mult_add_one%" <- función (izquierda, derecha) {
 #¡Observe las dobles comillas! 
 izquierda * derecha + 1
 }
 ```
-Entonces podría usar este operador binario como `4% mult_add_one% 5` que evalua a 21.
+Entonces podría usar este operador binario como `4 %mult_add_one% 5` que evalua a 21.
 
 ¡Escriba su propio operador binario a continuación desde cero! Tu binario El operador debe llamarse %p% para que la expresión:
 ```{r}
