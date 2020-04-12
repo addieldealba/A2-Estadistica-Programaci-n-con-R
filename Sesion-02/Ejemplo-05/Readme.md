@@ -8,7 +8,7 @@
 
 #### DESARROLLO
 
-R dispone de un conjunto de herramientas para depurar (debug) programas. Yo suelo usar la función debug de manera casi exclusiva y sistemática, pero leyendo The Art of R Programming he dado con una discusión sistemática sobre el proceso de depuración así como algunas herramientas adicionales.
+R dispone de un conjunto de herramientas para depurar (debug) programas. Se debe de llegar a usar laa función debug de manera casi exclusiva y sistemática, pero leyendo The Art of R Programming nos encontramos con una discusión sistemática sobre el proceso de depuración así como algunas herramientas adicionales.
 
 Una de las primeras que menciona el libro es la función stopifnot, que puede ser intercalada en el código para verificar condiciones necesarias (y lanzar un error en caso de que no se cumplan):
 ```{r}
@@ -22,7 +22,7 @@ mi.error( 0 )
 ```
 Puede ser usado para anticiparse activamente a los errores.
 
-Son, creo yo, conocidas de todos las funciones debug y undebug, que permiten ejecutar código línea a línea. Una adición interesante a la familia es debugonce, que llama a debug una única vez y evita tener que eliminar explícitamente a la función undebug en situaciones similares a
+Son, conocidas de todos las funciones debug y undebug, que permiten ejecutar código línea a línea. Una adición interesante a la familia es debugonce, que llama a debug una única vez y evita tener que eliminar explícitamente a la función undebug en situaciones similares a
 ```{r}
 f <- function( n, x ){
   for( i in 1:n)
@@ -71,4 +71,9 @@ Browse[1]> ls()
 Browse[1]> Q
 ```
 
-No son este tipo de herramientas aquellas a las que los programadores están más acomodaticiamente acostumbrados. Aparentemente, existen herramientas de depuración análogas a las que dispone Eclipse (para Java) o Eric (para Python) en desarrollo para RStudio. 
+No son este tipo de herramientas aquellas a las que los programadores están más acomodaticiamente acostumbrados. Aparentemente, existen herramientas de depuración análogas a las que dispone Eclipse (para Java) en desarrollo para RStudio. 
+
+Estas las podemos encontrar en la sección de debug en RStudio: 
+![RDebug](../images/RDebug.png)
+
+
