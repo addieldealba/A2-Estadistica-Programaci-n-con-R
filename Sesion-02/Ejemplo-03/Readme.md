@@ -11,10 +11,20 @@
 
 #### DESARROLLO EJEMPLO3
 
-Conozcamos la funtion paste() , para ver su hoja de específicacion teclea ?paste, veremos su funcionamiento con un ejercicio:
-Como puede ver, el primer argumento de paste () es `...`, que se conoce como puntos suspensivos o simplemente punto-punto-punto. Los puntos suspensivos permiten pasar un número indefinido de argumentos a un función. En el caso de paste () se puede pasar cualquier número de cadenas como argumentos y paste () devolverá todas las cadenas combinadas en una sola cadena.
+Conozcamos la funtion paste(), para ver su hoja de específicacion teclea ?paste, veremos su funcionamiento con un ejercicio:
+Como puede ver, el primer argumento de paste() es `...`, que se conoce como puntos suspensivos o simplemente punto-punto-punto. Los puntos suspensivos permiten pasar un número indefinido de argumentos a un función. En el caso de paste() se puede pasar cualquier número de cadenas como argumentos y paste() devolverá todas las cadenas combinadas en una sola cadena.
 
 Solo para ver cómo funciona paste (), escriba paste("Programming", "is", "fun!")
 ```{r}
 paste("Programming", "is", "fun!")
+```
+Hagamos el siguiente ejemplo para ilustar la función paste(): Los telegramas solían estar salpicados con las palabras START y STOP para demarcar el comienzo y el final de las oraciones. Escribe una función a continuación llamada telegram que formatea oraciones para telegramas.
+Por ejemplo, la expresión `telegram(" Good "," morning ")` debe evaluarse como:
+"START Good morning STOP"
+
+```{r}
+telegram <- function(...){
+ #escribe tu código aquí
+}
+
 ```
