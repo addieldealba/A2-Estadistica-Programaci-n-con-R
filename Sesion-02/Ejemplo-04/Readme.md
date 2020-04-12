@@ -10,7 +10,27 @@
 
 #### DESARROLLO EJEMPLO 4
 
-Cargamos el paquete que nos permitira hacer el ejercicio   
+Conocer la funcion list.files  
 ```{r}
+?list.files
+```
 
+Conocer la funcion data.frame  
+```{r}
+?data.frame
+```
+
+Conocer la funcion seq_along 
+```{r}
+?seg_along
+```
+
+Conocer la funcion vector 
+```{r}
+?vector
+```
+
+Conocer la funcion as.vector 
+```{r}
+?as.vector
 ```
