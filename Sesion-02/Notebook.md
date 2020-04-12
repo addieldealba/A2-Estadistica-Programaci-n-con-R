@@ -58,3 +58,21 @@ Como puede ver, hay una diferencia significativa entre el resto (11, 5) y el res
 
 Con toda esta charla sobre argumentos, puede que se pregunte si hay una manera de ver los argumentos de la función (además de mirar la documentación). Afortunadamente, puedes usar la funciín args (). Escriba: args(remainder) para examinar los argumentos de la función remainder.
 
+### OBJETIVO RETO 2
+- Generar un script en R con tareas complejas implementadas mediante funciones
+
+#### REQUISITOS RETO 2
+1. Contar con R studio.
+1. Usar la carpeta de trabajo `Sesion02/Ejemplo-02`
+
+#### DESARROLLO RETO 2
+En esta sección vamos a crear varias funciones con tareas de programación intermedia.
+
+Para esto hay que abrir el editor de scripts con un script nuevo:
+![RScript](images/RScript.png)
+
+Limpiamos el workspace como buena práctica de programación:
+```{r}
+rm(list=ls())
+```
+
