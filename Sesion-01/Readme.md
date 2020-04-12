@@ -23,11 +23,11 @@
 	- [Ejemplo 03](Ejemplo-03)
 	- [Reto 03](Reto-03)
 
-- Funciones, condiciones y loops
+- Funciones, condiciones y loops I
 	- [Ejemplo 04](Ejemplo-04)
 	- [Reto 04](Reto-04)
 
-- Funciones, condiciones y loops
+- Funciones, condiciones y loops II
 	- [Ejemplo 05](Ejemplo-05)
 	- [Reto 05](Reto-05)
 	
