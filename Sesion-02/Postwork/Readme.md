@@ -6,8 +6,8 @@
 
 #### REQUISITOS
 1. Contar con R studio.
-2. Usar el dataset specdata
+2. Usar el dataset specdata.
 
 #### DESARROLLO
-1. El alumno debe de resolver el reto del miniproyecto
+1. El alumno debe de resolver el reto del miniproyecto.
 
