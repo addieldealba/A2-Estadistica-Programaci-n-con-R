@@ -8,7 +8,7 @@
 
 #### DESARROLLO
 
-R dispone de un conjunto de herramientas para depurar (debug) programas. Se debe de llegar a usar laa función debug de manera casi exclusiva y sistemática, pero leyendo The Art of R Programming nos encontramos con una discusión sistemática sobre el proceso de depuración así como algunas herramientas adicionales.
+R dispone de un conjunto de herramientas para depurar (debug) programas. Se debe de llegar a usar la función debug de manera casi exclusiva y cuando es necesario, pero leyendo el libro The Art of R Programming nos encontramos con una discusión sistemática sobre el proceso de depuración así como algunas herramientas adicionales.
 
 Una de las primeras que menciona el libro es la función stopifnot, que puede ser intercalada en el código para verificar condiciones necesarias (y lanzar un error en caso de que no se cumplan):
 ```{r}
@@ -71,7 +71,7 @@ Browse[1]> ls()
 Browse[1]> Q
 ```
 
-No son este tipo de herramientas aquellas a las que los programadores están más acomodaticiamente acostumbrados. Aparentemente, existen herramientas de depuración análogas a las que dispone Eclipse (para Java) en desarrollo para RStudio. 
+No son este tipo de herramientas aquellas a las que los programadores están más acomodaticiamente acostumbrados. De hecho, existen herramientas de depuración análogas a las que dispone Eclipse (para Java) en desarrollo para RStudio, como lo presentamos a continuación. 
 
 Estas las podemos encontrar en la sección de debug en RStudio: 
 ![RDebug](../images/RDebug.png)
