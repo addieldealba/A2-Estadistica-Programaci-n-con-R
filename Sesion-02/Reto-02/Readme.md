@@ -19,8 +19,8 @@ rm(list=ls())
 Termine la definición de la función a continuación para que si una función se pasa alargumento "func" y algunos datos (como un vector) se pasan al argumento dat la función evaluate() devolverá el resultado de que se haya pasado como argumento para func.
 
 Sugerencias: Este ejercicio es un poco complicado, así que daré algunos ejemplos de cómo evaluate () debe actuar:
-1. evaluate(suma, c (2, 4, 6)) debe evaluar a 12
-2. evaluate(mediana, c (7, 40, 9)) debe evaluar a 9
+1. evaluate(sum, c(2, 4, 6)) debe evaluar a 12
+2. evaluate(median, c(7, 40, 9)) debe evaluar a 9
 3. evaluate(floor, 11.1) debe evaluar a 11
 Recuerda hacerlo en un script!
 
