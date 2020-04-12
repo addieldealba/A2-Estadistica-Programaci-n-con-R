@@ -2,7 +2,6 @@
 
 ### OBJETIVO RETO 3
 - Aprenderas a abrir e utilizar archivos con datos en R
-- Aprenderas a utilizar la función rbind()
 - Aprenderas a utilizar la función complete.cases()
 
 #### REQUISITOS RETO 3
