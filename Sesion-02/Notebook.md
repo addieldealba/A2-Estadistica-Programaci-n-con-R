@@ -38,5 +38,8 @@ Vas a escribir una función llamada remainder, remainder() tomará dos argumento
 Sugerencia # 1: puede utilizar el operador de módulo %% para encontrar el resto.
 Ej: 7 %% 4 se evalúa como 3.
 ```{r}
-
+remainder <- function(num, divisor=2) {
+  remainder <- num %% divisor
+  # Recuerda: El valor de la última expresión evaluada es lo que se regresá (return)! 
+}
 ```
