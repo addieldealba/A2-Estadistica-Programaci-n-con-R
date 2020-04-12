@@ -25,6 +25,8 @@ mad_libs <- function(...){
   paste(arg1,arg2)
 }
 
+"I" %p% "love" %p% "R!"
+[1] "I love R!"
 
 
 
