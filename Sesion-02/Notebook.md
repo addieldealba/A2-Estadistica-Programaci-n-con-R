@@ -31,7 +31,7 @@
 En esta sección vamos a crear varias funciones con tareas de programación intermedia.
 
 Para esto hay que abrir el editor de scripts con un script nuevo:
-![RScript](../images/RScript.png)
+![RScript](/images/RScript.png)
 
 Limpiamos el workspace como buena práctica de programación:
 ```{r}
