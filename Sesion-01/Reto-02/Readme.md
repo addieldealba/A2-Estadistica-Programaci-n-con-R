@@ -1,5 +1,5 @@
 `Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-01`] > [`Reto-02`] 
-## Programacion orientada a objetos  
+## Programacion con objetos  
 
 ### OBJETIVO
 - Usar el package dplyr para optimizar codigo 
