@@ -77,7 +77,11 @@ Entonces podría usar este operador binario como `4% mult_add_one% 5` que evalua
 evaluará a: "¡Buen trabajo!"
 
 Ahora conoceremos la funcion append() con ?append
-
+```{r}
+?append
+```
 Ahora conoceremos la funcion complete.cases() con ?complete.cases
-
+```{r}
+?complete.cases
+```
 
