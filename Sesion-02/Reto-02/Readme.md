@@ -31,3 +31,4 @@ evaluate <- función (func, dat) {
   # Recuerde: ¡se devolverá la última expresión evaluada!
 }
 ```
+¡Hagamos girar su nueva función de evaluate()!. Utilice evaluate para encontrar la desviación estándar del vector c (1.4, 3.6, 7.9, 8.8).
