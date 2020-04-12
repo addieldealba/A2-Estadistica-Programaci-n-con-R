@@ -37,7 +37,7 @@ args <- list (...)
 #  Ahora vamos a suponer que hay dos argumentos con nombre dentro de los argumentos
 #  con los nombres `alpha` y` beta.` Podemos extraer argumentos con nombre de
 #  la lista de argumentos utilizando el nombre del argumento y los corchetes dobles. los
-¡La variable # # `args` es solo una lista regular después de todo!
+#  ¡La variable  `args` es solo una lista regular después de todo!
 alpha <- args [["alpha"]]
 beta <- args [["beta"]]
 # Luego devolvemos la suma de alfa y beta. 
@@ -45,3 +45,13 @@ alpha + beta
 }
 ```
 ¿Alguna vez has jugado Mad Libs antes? La siguiente función construirá un oración de partes del discurso que proporcionas como argumentos. Escribiremos más de la función, pero necesitará desempaquetar los argumentos apropiados del elipses.
+```{r}
+mad_libs <- function(...){
+  # Do your argument unpacking here!
+  
+  # Don't modify any code below this comment.
+  # Notice the variables you'll need to create in order for the code below to
+  # be functional!
+  paste("News from", place, "today where", adjective, "students took to the streets in protest of the new", noun, "being installed on campus.")
+}
+```
