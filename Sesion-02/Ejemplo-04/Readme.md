@@ -48,7 +48,7 @@ Conocer la funcion as.vector
 ```{r}
 ?as.vector
 ```
-Utilizar la función as.vector para crear un listado de todos los archivos en la carpeta /specdata del data set del proyecto
+Utilizar la función as.vector 
 ```{r}
 
 `````
