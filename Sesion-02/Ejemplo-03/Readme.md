@@ -58,3 +58,20 @@ Es hora de usar tu función mad_libs. Asegúrese de nombrar el lugar, el adjetiv
 ```{r}
 mad_libs("mad","as","it can be") # por ejemplo
 ```
+Estás familiarizado con sumar, restar, multiplicar y dividir números en R. Para hacer esto,use los símbolos +, -, * y /. Estos símbolos se llaman operadores binarios porque toman dos entradas, una entrada desde la izquierda y una entrada desde la derecha. 
+En R puede definir sus propios operadores binarios. En el próximo ejemplo te mostrarémos cómo.
+
+Digamos que quería definir un operador binario que multiplicara dos números y luego agregó uno al producto. A continuación se muestra una implementación de ese operador:
+```{r}
+"% mult_add_one%" <- función (izquierda, derecha) {
+#¡Observe las dobles comillas! 
+izquierda * derecha + 1
+}
+```
+Entonces podría usar este operador binario como `4% mult_add_one% 5` que evalua a 21.
+
+¡Escriba su propio operador binario a continuación desde cero! Tu binario El operador debe llamarse %p% para que la expresión:
+```{r}
+"Bien"% p% "¡trabajo!"
+```
+evaluará a: "¡Buen trabajo!"
