@@ -48,3 +48,8 @@ remainder <- function(num, divisor=2) {
 ```
 Hagamos algunas pruebas de la función restante. Ejecute remainder(5) y vea qué sucede.
 Tomemos un momento para examinar lo que acaba de suceder. Usted proporcionó un argumento para la función, y R hizo coincidir ese argumento con 'num' ya que 'num' es el primer argumento. El valor predeterminado para 'divisor' es 2, por lo que la función utilizó el valor predeterminado que proporcionó.
+
+Ahora probemos la función restante proporcionando dos argumentos. Introduzca en el prompt > remainder(11, 5) y veamos qué pasa.
+```{r}
+remainder(11,5)
+```
