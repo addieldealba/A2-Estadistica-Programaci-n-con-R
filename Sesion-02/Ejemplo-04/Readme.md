@@ -16,7 +16,7 @@ Conocer la funcion la funcion list.files()
 ```{r}
 ?list.files
 ```
-Utilizar la función list.files() para 
+Utilizar la función list.files() para crear un listado de todos los archivos en la carpeta /specdata del data set del proyecto
 ```{r}
 
 ```
@@ -24,7 +24,7 @@ Conocer la funcion rbind()
 ```{r}
 ?rbind
 ```
-Utilizar la función rbind para crear un listado de todos los archivos en la carpeta /specdata del data set del proyecto
+Utilizar la función rbind para 
 ```{r}
 
 ```
