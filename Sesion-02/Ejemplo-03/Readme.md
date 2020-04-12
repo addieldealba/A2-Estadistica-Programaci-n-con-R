@@ -13,5 +13,5 @@
 
 Cargamos el paquete que nos permitira hacer el ejercicio   
 ```{r}
-library(dplyr)
+
 ```
