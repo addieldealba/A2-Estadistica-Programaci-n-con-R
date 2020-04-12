@@ -18,11 +18,11 @@
 	- [Ejemplo 02](Ejemplo-02)
 	- [Reto 02](Reto-02)
 
-- Funciones paste(), append(), completecases()
+- Funciones paste(), append(), completecases(), rbind()
 	- [Ejemplo 03](Ejemplo-03)
 	- [Reto 03](Reto-03)
 
-- Funciones rbind(), list.files(), vector(), tipos de acceso a valores en dataframesde correlacion y sus implementaciones en R
+- Funciones list.files(), vector(), tipos de acceso a valores en dataframesde correlacion y sus implementaciones en R
 	- [Ejemplo 04](Ejemplo-04)
 
 - Revisar la ejecución y corregir errores en script medante debug
