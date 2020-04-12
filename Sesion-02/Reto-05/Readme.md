@@ -2,9 +2,9 @@
 
 
 ### OBJETIVO
-- Aprenderas a cargar un package
-- Aprenderas a usar dplyr
-- Aprenderas a seleccionar y filtrar informacion 
+- Aprenderas a 
+- Aprenderas a 
+- Aprenderas a  
 
 #### REQUISITOS
 1. Contar con R studio.
