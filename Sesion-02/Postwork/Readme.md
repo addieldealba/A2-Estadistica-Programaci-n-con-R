@@ -9,5 +9,5 @@
 2. Usar el dataset specdata
 
 #### DESARROLLO
-3 El alumno debe de resolver el reto del proyecto
+3 El alumno debe de resolver el reto del miniproyecto
 
