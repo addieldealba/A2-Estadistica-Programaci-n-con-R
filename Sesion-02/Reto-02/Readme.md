@@ -22,6 +22,7 @@ Sugerencias: Este ejercicio es un poco complicado, así que daré algunos ejempl
 1. evaluate(sum, c(2, 4, 6)) debe evaluar a 12
 2. evaluate(median, c(7, 40, 9)) debe evaluar a 9
 3. evaluate(floor, 11.1) debe evaluar a 11
+
 Recuerda hacerlo en un script!
 
 ```{r}
