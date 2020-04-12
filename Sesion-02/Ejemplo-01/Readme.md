@@ -46,3 +46,4 @@ En el script, probemos que la función haga el promedio pasandolé un vector de 
 ```{r}
 my_mean(c(2,4,5))
 ```
+Las funciones generalmente toman argumentos que son variables sobre las que opera la función. Por ejemplo, la función mean() toma un vector como argumento, como en el caso de my_mean(c(2,6,8)). La función my_mean () suma todos los números en el vector y divide esa suma por la longitud del vector.
