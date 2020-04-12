@@ -1,5 +1,5 @@
 `Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-01`] > [`Reto-01`] 
-## Programacion orientada a objetos  
+## Programacion con objetos  
 
 ### OBJETIVO
 - Importación de un dataset
