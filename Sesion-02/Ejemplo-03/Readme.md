@@ -1,9 +1,10 @@
 `Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-02`] > [`Ejemplo-03`] 
 
 ### OBJETIVO EJEMPLO 3
-- Aprenderas a 
-- Aprenderas a 
-- Aprenderas a 
+- Aprenderas a utilizar la funcion paste()
+- Aprenderas a crear funciones con el argumento ...
+- Aprenderas a crear operadores personalizados en R
+- Conocerás la función complete.cases() y append()
 
 #### REQUISITOS EJEMPLO3
 1. Contar con R studio.
