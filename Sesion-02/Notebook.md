@@ -46,5 +46,5 @@ remainder <- function(num, divisor=2) {
   # Recuerda: El valor de la última expresión evaluada es lo que se regresá (return)! 
 }
 ```
-Hagamos algunas pruebas de la función restante. Ejecute el resto (5) y vea qué sucede.
+Hagamos algunas pruebas de la función restante. Ejecute remainder(5) y vea qué sucede.
 
