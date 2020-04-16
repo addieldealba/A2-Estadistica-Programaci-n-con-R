@@ -1,13 +1,47 @@
-`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-02`] > [`Postwork`] 
-
-
+`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-00`] > [`Ejemplo-00`] 
 ### OBJETIVO
-- Resolver individualmente por alumno el reto del miniproyecto anterior presentado
+- 
 
 #### REQUISITOS
 1. Contar con R studio.
-2. Usar el dataset specdata.
+1. Usar la carpeta de trabajo `Sesion00/Ejemplo-00`
 
 #### DESARROLLO
-1. El alumno debe de resolver el reto del miniproyecto.
 
+Limpiamos el workspace como buena práctica de programación:
+```{r}
+rm(list=ls())
+```
+Como ya conocemos, así es como se define una función en R:
+```{r}
+
+{
+#	Manipular argumentos arg1 y arg2 de cierta forma y regresar un valor
+}
+```
+  
+```{r}
+boring_function <- function(x) {
+  x
+}
+```
+
+```{r}
+
+```
+
+### Ahora 
+
+Para esto hay que abrir el editor de scripts con un script nuevo:
+![RScript](../images/RScript.png)
+
+Ahora 
+```{r}
+
+}
+```
+En 
+```{r}
+
+```
+Paragraph

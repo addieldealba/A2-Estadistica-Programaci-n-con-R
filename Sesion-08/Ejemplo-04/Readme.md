@@ -1,58 +1,47 @@
-`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-02`] > [`Ejemplo-04`] 
-### OBJETIVO EJEMPLO 4
-- Aprenderas a utilizar la funcion list.files() sin argumentos
-- Aprenderas a utilizar la funcion rbind()
-- Aprenderas a utilizar la seq_along()
-- Aprenderas a utilizar la vector()
-- Aprenderas a utilizar la as.vector()
+`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-00`] > [`Ejemplo-00`] 
+### OBJETIVO
+- 
 
-#### REQUISITOS EJEMPLO 4
+#### REQUISITOS
 1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion02/Ejemplo-03`
+1. Usar la carpeta de trabajo `Sesion00/Ejemplo-00`
 
-#### DESARROLLO EJEMPLO 4
+#### DESARROLLO
 
-Conocer la funcion la funcion list.files()
+Limpiamos el workspace como buena práctica de programación:
 ```{r}
-?list.files
+rm(list=ls())
 ```
-Utilizar la función list.files() para crear un listado de todos los archivo en: [DataSet Contaminantes en Aire](../Dataset/rprog_data_specdata.zip) en la carpeta /specdata del data set del miniproyecto en zip extraído en tu carpeta de trabajo
+Como ya conocemos, así es como se define una función en R:
 ```{r}
-list.files("/specdata", full.names = TRUE)
+
+{
+#	Manipular argumentos arg1 y arg2 de cierta forma y regresar un valor
+}
 ```
-Conocer la funcion rbind() 
+  
 ```{r}
-?rbind
+boring_function <- function(x) {
+  x
+}
 ```
-Utilizar la función rbind para juntar filas de dos archivos, pueden ser 001.csv y 002.csv de
+
 ```{r}
-readings = data.frame()
-readings <- rbind(readings, read.csv("001.csv))
-readings <- rbind(readings, read.csv("002.csv))
+
 ```
-Conocer la funcion seq_along 
+
+### Ahora 
+
+Para esto hay que abrir el editor de scripts con un script nuevo:
+![RScript](../images/RScript.png)
+
+Ahora 
 ```{r}
-?seg_along
+
+}
 ```
-Conocer un ejemplo de implementación de la función seq_along
+En 
 ```{r}
-for(i in seq_along(id)) {
-		
-	}
+
 ```
-Conocer la funcion vector 
-```{r}
-?vector
-```
-Utilizar la función vector
-```{r}
-new_vector <- vector(mode = "numeric")
-```
-Conocer la funcion as.vector 
-```{r}
-?as.vector
-```
-Utilizar la función as.vector 
-```{r}
-as.vector(new.vector)
-`````
+Paragraph

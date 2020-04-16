@@ -1,15 +1,47 @@
-`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-02`] > [`Reto-03`] 
+`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-00`] > [`Ejemplo-00`] 
+### OBJETIVO
+- 
 
-### OBJETIVO RETO 3
-- Aprenderas a abrir e utilizar archivos con datos en R
-- Aprenderas a utilizar la función complete.cases()
-
-#### REQUISITOS RETO 3
+#### REQUISITOS
 1. Contar con R studio.
-2. Usar la carpeta de trabajo `Sesion02/Ejemplo-03`
-3. Tener el archivo [DataSet Contaminantes en Aire](../Dataset/rprog_data_specdata.zip) en esta carpeta.
+1. Usar la carpeta de trabajo `Sesion00/Ejemplo-00`
 
-#### RETO 3
-1. Descomprimir el archivo zip :  [DataSet Contaminantes en Aire](../Dataset/rprog_data_specdata.zip) y seleccionar 2 de los archivos, de preferencia el primero 000.csv y 001.csv
-2. Utilizar la funcion complete.cases() con estos dos archivos y almacenar el resultado en un dataframe nuevo de 2x2 (nxn) donde la columna 1 tiene el número o nombre de archivo y la columna 2 la cantidad de casos completos (sin NA) de cada archivo.
+#### DESARROLLO
 
+Limpiamos el workspace como buena práctica de programación:
+```{r}
+rm(list=ls())
+```
+Como ya conocemos, así es como se define una función en R:
+```{r}
+
+{
+#	Manipular argumentos arg1 y arg2 de cierta forma y regresar un valor
+}
+```
+  
+```{r}
+boring_function <- function(x) {
+  x
+}
+```
+
+```{r}
+
+```
+
+### Ahora 
+
+Para esto hay que abrir el editor de scripts con un script nuevo:
+![RScript](../images/RScript.png)
+
+Ahora 
+```{r}
+
+}
+```
+En 
+```{r}
+
+```
+Paragraph

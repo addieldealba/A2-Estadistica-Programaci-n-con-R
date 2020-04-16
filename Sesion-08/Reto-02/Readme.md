@@ -1,40 +1,47 @@
-`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-02`] > [`Reto-02`] 
-### OBJETIVO RETO 2
-- Generar un script en R con tareas complejas implementadas mediante funciones
+`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-00`] > [`Ejemplo-00`] 
+### OBJETIVO
+- 
 
-#### REQUISITOS RETO 2
+#### REQUISITOS
 1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion02/Ejemplo-02`
+1. Usar la carpeta de trabajo `Sesion00/Ejemplo-00`
 
-#### DESARROLLO RETO 2
-En esta sección vamos a crear varias funciones con tareas de programación intermedia.
-
-Para esto hay que abrir el editor de scripts con un script nuevo:
-![RScript](../images/RScript.png)
+#### DESARROLLO
 
 Limpiamos el workspace como buena práctica de programación:
 ```{r}
 rm(list=ls())
 ```
-Termine la definición de la función a continuación para que si una función se pasa al argumento "func" y algunos datos (como un vector) se pasan al argumento dat la función evaluate() devolverá el resultado de que se haya pasado como argumento para func.
-
-Sugerencias: Este ejercicio es un poco complicado, así que daré algunos ejemplos de cómo evaluate() debe actuar:
-1. evaluate(sum, c(2, 4, 6)) debe evaluar a 12
-2. evaluate(median, c(7, 40, 9)) debe evaluar a 9
-3. evaluate(floor, 11.1) debe evaluar a 11
-
-Recuerda hacerlo en un script!
-
+Como ya conocemos, así es como se define una función en R:
 ```{r}
-evaluate <- función (func, dat) {
-  # ¡Escribe tu código aquí!
-  # Recuerde: ¡se devolverá la última expresión evaluada!
+
+{
+#	Manipular argumentos arg1 y arg2 de cierta forma y regresar un valor
 }
 ```
-¡Hagamos girar su nueva función de evaluate()!. Utilice evaluate() para encontrar la desviación estándar del vector c(1.4, 3.6, 7.9, 8.8).
+  
+```{r}
+boring_function <- function(x) {
+  x
+}
+```
 
-Escriba el siguiente comando y luego discutiremos cómo funciona: evalúe(function (x) {x + 1}, 6)
+```{r}
 
-Intente implementar evaluate() junto con una función anónima para devolver el primer elemento del vector c(8, 4, 0). Su función anónima solo debe tomar un argumento que debe ser una variable `x`. Esto debe de ser en la misma linea como en el ejemplo anterior.
+```
 
-Ahora intente usar evaluate() junto con una función anónima para devolver el último elemento del vector c(8, 4, 0). Su función anónima solo debe tomar un argumento que debe ser un variable `x`.
+### Ahora 
+
+Para esto hay que abrir el editor de scripts con un script nuevo:
+![RScript](../images/RScript.png)
+
+Ahora 
+```{r}
+
+}
+```
+En 
+```{r}
+
+```
+Paragraph
