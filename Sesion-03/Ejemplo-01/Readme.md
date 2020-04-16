@@ -1,4 +1,4 @@
-`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-02`] > [`Ejemplo-01`] 
+`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-00`] > [`Ejemplo-00`] 
 ### OBJETIVO
 - 
 
