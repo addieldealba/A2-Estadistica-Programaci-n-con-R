@@ -2,11 +2,11 @@
 
 ### OBJETIVOS 
 
-- Conocer Rstudio Cloud
-- Integrar Rstudio o Rstudio Cloud con BD (odbc drivers) y connect pane
-- Integrar Rstudio con MariaDB o MySQL
-- Integrar Rstudio con MongoDB
-- Tomar datos de webAPIs desde Rstudio 
+- Integrar Rstudio con BDs mediante librerías, drivers (odbc drivers) ó el connect pane. 
+- Integrar Rstudio con MariaDB para MySQL (fetch)
+- Integrar Rstudio con MongoDB (fetch)
+- Tomar datos de webAPIs (fetch) desde Rstudio 
+- Tomar datos de algún folder y actualizar los datos de este folder mediante un job automatizado (fetch).
 - Escribir datos desde Rstudio a MySQL o MongoDB 
 
 #### ORGANIZACION DE LA CLASE 
