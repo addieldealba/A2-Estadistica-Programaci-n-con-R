@@ -21,11 +21,11 @@ nitrato: el nivel de nitrato de PM en el aire en esa fecha (medido en microgramo
 Para esta asignación de programación, necesitará descomprimir este archivo y crear el directorio 'specdata'. Una vez que haya descomprimido el archivo zip, no realice modificaciones en los archivos del directorio 'specdata'. En cada archivo, notará que hay muchos días en los que faltan sulfato o nitrato (o ambos) (codificados como NA). Esto es común con los datos de monitoreo de la contaminación del aire en los Estados Unidos.
 
 1- Parte 1
-Escriba una función llamada 'medio contaminante' que calcule la media de un contaminante (sulfato o nitrato) en una lista específica de monitores. La función 'contaminante' toma tres argumentos: 'directorio', 'contaminante' e 'id'. Dados los números de identificación de un monitor vectorial, 'contaminante medio' lee que monitorea los datos de materia particulada del directorio especificado en el argumento 'directorio' y devuelve la media del contaminante en todos los monitores, ignorando cualquier valor faltante codificado como NA. Un prototipo de la función es el siguiente
+Escriba una función llamada 'pollutantmean' que calcule la media de un contaminante (sulfato o nitrato) en una lista específica de monitores. La función 'pollutantmean' toma tres argumentos: 'directorio', 'pollutant' e 'id'. Dados los números de identificación de un monitor vectorial, 'pollutantmean' lee que monitorea los datos de materia particulada del directorio especificado en el argumento 'directorio' y devuelve la media del contaminante en todos los monitores, ignorando cualquier valor faltante codificado como NA. Un prototipo de la función es el siguiente
 
    ![Pollutantmean](../images/pollutantmeanargs.png)
 
-. Puede ver algunos resultados de ejemplo de esta función a continuación. La función que escriba debería poder coincidir con esta salida. Guarde su código en un archivo llamado pollutantmean.R.
+Puede ver algunos resultados de ejemplo de esta función a continuación. La función que escriba debería poder coincidir con esta salida. Guarde su código en un archivo llamado pollutantmean.R
 
    ![Pollutantmean](../images/pollutantworking.png)
 
@@ -34,7 +34,7 @@ Escriba una función que lea un directorio lleno de archivos e informe el númer
 
    ![Pollutantmean](../images/completeargs.png)
 
-Puede ver algunos resultados de ejemplo de esta función a continuación. La función que escriba debería poder coincidir con esta salida. Guarde su código en un archivo llamado complete.R. Para ejecutar el script de envío para esta parte, asegúrese de que su directorio de trabajo tenga el archivo complete.R en él.
+Puede ver algunos resultados de ejemplo de esta función a continuación. La función que escriba debería poder coincidir con esta salida. Guarde su código en un archivo llamado complete.R .Para ejecutar el script de envío para esta parte, asegúrese de que su directorio de trabajo tenga el archivo complete.R en él.
 
    ![Pollutantmean](../images/completeworking.png)
 

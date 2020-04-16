@@ -35,5 +35,7 @@
 	- [Ejemplo 06](Ejemplo-06)
 	- [Reto 06](Reto-06)
 
+- [miniProyecto](miniProyecto)
+
 - [Postwork](Postwork)
 

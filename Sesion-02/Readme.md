@@ -22,13 +22,13 @@
 	- [Ejemplo 03](Ejemplo-03)
 	- [Reto 03](Reto-03)
 
-- Funciones list.files(), vector(), tipos de acceso a valores en dataframesde correlacion y sus implementaciones en R
+- Funciones list.files(), vector(), tipos de acceso a valores en dataframes para correlacion y sus implementaciones cor() en R
 	- [Ejemplo 04](Ejemplo-04)
 
 - Revisar la ejecución y corregir errores en script medante debug
 	- [Ejemplo 05](Ejemplo-05)
 
-- Proyecto
+- miniProyecto
 	- [Presentación de miniProyecto](Proyecto)
 - Postwork
 	- [Postwork](Postwork)
