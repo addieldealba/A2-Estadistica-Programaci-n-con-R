@@ -30,10 +30,10 @@ Sin embargo, la manera más profesional de trabajar es cuando onectemos Rstudio 
 
 Copie y pegue la URL de su repositorio de Github en el cuadro de solicitud. Ahora su proyecto RStudio Cloud está conectado a su repositorio de Github. Cualquier cambio realizado en RStudio Cloud puede reflejarse en Github (Escenario A) y viceversa (Escenario B).
 
-Scenario A: Pushing changes in RStudio Cloud to Github
-1. Configure git in RStudio Cloud
+Escenario A: empujar cambios en RStudio Cloud a Github
 
-a. Click on the Terminal tab on the bottom panel within your RStudio Cloud project.
+Configurar git en RStudio Cloud
+a. Haga clic en la pestaña Terminal en el panel inferior dentro de su proyecto RStudio Cloud.
 
 ![RScloud](../images/cloud05.png)
 
