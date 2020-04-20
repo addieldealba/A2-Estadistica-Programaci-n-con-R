@@ -12,26 +12,13 @@ Entramos a la dirección web:
 ![RScloud](../images/Rstudiocloud.png)
 y creamos una cuenta en las sección de Sign Up, después hacemos Log In. 
 
+Una vez en el workspace creamos un projecto dando click en el botón correspondiente: 
+![RScloud](../images/Rstudioproject.png)
+después verémos como se inicializa nuestro front end en cloud! de RStudio. Como podemos observar es igual al de RStudio Desktop, ahora exploraremos los objetivos de esta clase, que son las interfaces con aplicaciónes externas y repositorios.
+
 Limpiamos el workspace como buena práctica de programación:
 ```{r}
 rm(list=ls())
-```
-Como ya conocemos, así es como se define una función en R:
-```{r}
-
-{
-#	Manipular argumentos arg1 y arg2 de cierta forma y regresar un valor
-}
-```
-  
-```{r}
-boring_function <- function(x) {
-  x
-}
-```
-
-```{r}
-
 ```
 
 ### Ahora 
