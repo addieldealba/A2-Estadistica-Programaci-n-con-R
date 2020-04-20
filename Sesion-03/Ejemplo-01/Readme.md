@@ -18,14 +18,10 @@ Una vez en el workspace creamos un projecto dando click en el botón correspondi
 ![RScloud](../images/Rcloudproject.png)
 después verémos como se inicializa nuestro front end en cloud! de RStudio. Como podemos observar es igual al de RStudio Desktop, ahora exploraremos los objetivos de esta clase, que son las interfaces con aplicaciónes externas y repositorios.
 
-Limpiamos el workspace como buena práctica de programación:
-```{r}
-rm(list=ls())
-```
+Ahora,
 
-### Ahora 
+Conectemos Rstudio Cloud con nuestro repositorio de trabajo en github:
 
-Para esto hay que abrir el editor de scripts con un script nuevo:
 ![RScript](../images/RScript.png)
 
 Ahora 
