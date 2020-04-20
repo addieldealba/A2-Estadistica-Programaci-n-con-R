@@ -33,12 +33,14 @@ Copie y pegue la URL de su repositorio de Github en el cuadro de solicitud. Ahor
 Escenario A: empujar cambios en RStudio Cloud a Github
 
 Configurar git en RStudio Cloud
-a. Haga clic en la pestaña Terminal en el panel inferior dentro de su proyecto RStudio Cloud.
+
+a. Haz clic en la pestaña Terminal en el panel inferior dentro de su proyecto RStudio Cloud.
 
 ![RScloud](../images/cloud05.png)
 
+b. Dentro de Terminal, escribe los siguientes comandos pero reemplaza you@example.com con tu dirección de correo electrónico real y tu nombre con tu nombre real entre comillas:
 
-![RScloud](../images/Rcloudproject.png)
+![RScloud](../images/cloud1.png)
 
 
 ![RScloud](../images/Rcloudproject.png)
