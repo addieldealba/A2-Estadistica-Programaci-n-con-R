@@ -28,6 +28,8 @@ Sin embargo, la manera más profesional de trabajar es cuando onectemos Rstudio 
 
 ![RScloud](../images/Newprojectfromrepo.png)
 
+Copie y pegue la URL de su repositorio de Github en el cuadro de solicitud. Ahora su proyecto RStudio Cloud está conectado a su repositorio de Github. Cualquier cambio realizado en RStudio Cloud puede reflejarse en Github (Escenario A) y viceversa (Escenario B).
+
 ![RScloud](../images/Rcloudproject.png)
 ![RScloud](../images/Rcloudproject.png)
 ![RScloud](../images/Rcloudproject.png)
