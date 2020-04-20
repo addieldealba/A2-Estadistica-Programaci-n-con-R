@@ -26,6 +26,13 @@ Sin embargo, la manera más profesional de trabajar es cuando onectemos Rstudio 
 
 2. Cree un nuevo proyecto en RStudio Cloud: vaya a RStudio Cloud y haga clic en la flecha al lado de "Nuevo proyecto". En el menú desplegable, seleccione "Nuevo proyecto de Git Repo".
 
+![RScloud](../images/cloud 0.875.png)
+![RScloud](../images/Rcloudproject.png)
+![RScloud](../images/Rcloudproject.png)
+![RScloud](../images/Rcloudproject.png)
+![RScloud](../images/Rcloudproject.png)
+![RScloud](../images/Rcloudproject.png)
+![RScloud](../images/Rcloudproject.png)
 
 Ahora 
 ```{r}
