@@ -13,7 +13,7 @@
 #### ORGANIZACION DE LA CLASE 
 
 - Creación de un usuario y workspace en Rstudio Cloud, configurar el ambiente y explorar el connect pane.
-	  [Ejemplo 01](Ejemplo-01)
+	- [Ejemplo 01](Ejemplo-01)
 
 - 
 	- [Ejemplo 02](Ejemplo-02)
