@@ -1,10 +1,10 @@
-`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-00`] > [`Ejemplo-00`] 
+`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-03`] > [`Ejemplo-01`] 
 ### OBJETIVO
-- 
+- Conocer el ambiente de desarrollo en la nube para Rstudio específicamente RStudio Cloud.
 
 #### REQUISITOS
-1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion00/Ejemplo-00`
+1. Contar co
+1. Usar la carpeta de trabajo `Sesion03/Ejemplo-01`
 
 #### DESARROLLO
 
