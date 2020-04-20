@@ -12,7 +12,9 @@ Entramos a la dirección web:
 ![RScloud](../images/Rstudiocloud.png)
 y creamos una cuenta en las sección de Sign Up, después hacemos Log In. 
 
+
 Una vez en el workspace creamos un projecto dando click en el botón correspondiente: 
+
 ![RScloud](../images/Rcloudproject.png)
 después verémos como se inicializa nuestro front end en cloud! de RStudio. Como podemos observar es igual al de RStudio Desktop, ahora exploraremos los objetivos de esta clase, que son las interfaces con aplicaciónes externas y repositorios.
 
