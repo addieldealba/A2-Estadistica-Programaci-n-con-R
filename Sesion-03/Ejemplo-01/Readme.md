@@ -35,7 +35,7 @@ Scenario A: Pushing changes in RStudio Cloud to Github
 
 a. Click on the Terminal tab on the bottom panel within your RStudio Cloud project.
 
-![RScloud](../images/cloud 0.875.PNG)
+![RScloud](../images/cloud05.png)
 
 
 ![RScloud](../images/Rcloudproject.png)
