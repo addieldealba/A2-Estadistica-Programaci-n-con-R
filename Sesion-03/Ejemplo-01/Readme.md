@@ -25,6 +25,12 @@ Sin embargo, la manera más profesional de trabajar es cuando onectemos Rstudio 
 
 y crear un nuevo proyecto desde un repositorio Git hub. Para esto sigamos las siguientes instrucciones,
 
+### 1) Configuración de RStudio Cloud
+
+1. Crear un repositorio vacío en Github
+
+2. Cree un nuevo proyecto en RStudio Cloud: vaya a RStudio Cloud y haga clic en la flecha al lado de "Nuevo proyecto". En el menú desplegable, seleccione "Nuevo proyecto de Git Repo".
+
 
 Ahora 
 ```{r}
