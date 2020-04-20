@@ -21,7 +21,7 @@ después verémos como se inicializa nuestro front end en cloud! de RStudio. Com
 Ahora, 
 
 Conectemos Rstudio Cloud con nuestro repositorio de trabajo en github, en las sección de configuración de proyecto selecctionar la sección Git/SVN y activar Git depués reiniciar:
-![RScript](../images/Rstudioprojectrestart.png)
+![RScript](../images/Rstudioprojectoptrestart.png)
 
 y crear un nuevo proyecto desde un repositorio Git hub. 
 
