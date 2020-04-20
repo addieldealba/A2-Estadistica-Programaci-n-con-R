@@ -2,6 +2,7 @@
 
 ### OBJETIVOS 
 
+- Rstudio Cloud, Conect pane, conectando con un repositorio git. 
 - Integrar Rstudio con BDs mediante librerías, drivers (odbc drivers) ó el connect pane. 
 - Integrar Rstudio con MariaDB para MySQL (fetch)
 - Integrar Rstudio con MongoDB (fetch)
