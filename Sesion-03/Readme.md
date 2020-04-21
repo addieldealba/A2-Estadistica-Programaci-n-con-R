@@ -13,23 +13,20 @@
 #### ORGANIZACION DE LA CLASE 
 
 - Creación de un usuario y workspace en Rstudio Cloud, configurar el ambiente y explorar el connect pane.
-	- [Ejemplo 01](Ejemplo-01)
+	- [Actividad 01](Ejemplo-01)
 
 - 
-	- [Ejemplo 02](Ejemplo-02)
-	- [Reto 02](Reto-02)
+	- [Actividad 02](Ejemplo-02)
+	- [Actividad 03](Reto-02)
 
 - 
-	- [Ejemplo 03](Ejemplo-03)
-	- [Reto 03](Reto-03)
+	- [Actividad 04](Ejemplo-03)
 
 - 
-	- [Ejemplo 04](Ejemplo-04)
+	- [Actividad 05](Ejemplo-04)
 
 - 
-	- [Ejemplo 05](Ejemplo-05)
-
-- miniProyecto
-	- [Presentación de miniProyecto](Proyecto)
+	- [Actividad 06](Ejemplo-05)
+	
 - Postwork
 	- [Postwork](Postwork)
