@@ -34,7 +34,7 @@ Escenario A: empuja(push) cambios en RStudio Cloud a Git Hub.
 
 Configurar git en RStudio Cloud:
 
-a. Haz clic en la pestaña Terminal en el panel inferior dentro de su proyecto RStudio Cloud.
+a. Haz click en la pestaña Terminal en el panel inferior dentro de su proyecto RStudio Cloud.
 
 ![RScloud](../images/cloud05.png)
 
@@ -48,7 +48,7 @@ Esto registrará cualquier cambio que realizes bajo tu identidad de usuario espe
 
 a. Guarda todos los archivos en RStudio Cloud que hayas editado, si aún no lo has hecho.
 
-b. En el panel derecho, ve a la pestaña en el extremo derecho que dice "Git". En esa pestaña, debería ver los archivos que editaste y guardaste. Haz clic en el cuadro debajo de "En escena" para seleccionar el archivo que deseas actualizar en Git Hub.
+b. En el panel derecho, ve a la pestaña en el extremo derecho que dice "Git". En esa pestaña, deberías ver los archivos que editaste y guardaste. Haz click en el cuadro debajo de "En escena" para seleccionar el archivo que deseas actualizar en Git Hub.
 
 ![RScloud](../images/cloud075.png)
 
@@ -58,11 +58,11 @@ d. Aparecerá una ventana que muestra los cambios que has realizado. Coloca un m
 
 3. Empuja(push) los cambios a Git Hub:
 
-a. Elije la rama a la que deseas enviar los cambios seleccionándola en el menú desplegable y luego haz clic en el botón con la flecha verde hacia arriba. (Esto también se puede hacer en la ventana principal de RStudio Cloud en la barra de herramientas de la pestaña Git).
+a. Elije la rama a la que deseas enviar los cambios seleccionándola en el menú desplegable y luego haz click en el botón con la flecha verde hacia arriba. (Esto también se puede hacer en la ventana principal de RStudio Cloud en la barra de herramientas de la pestaña Git).
 
 ![RScloud](../images/cloud0.png)
 
-b. Una ventana emergente te pedirá que ingrese tu nombre de usuario y contraseña para Git Hub. Sigue las instrucciones que se te indiquen.
+b. Una ventana emergente te pedirá que ingreses tu nombre de usuario y contraseña para Git Hub. Sigue las instrucciones que se te indiquen.
 
 c. Opcional: puedes ir a Git Hub y verificar tu repositorio de Github para confirmar que tus cambios se enviaron correctamente a Git Hub.
 
@@ -74,11 +74,11 @@ a. En la barra de herramientas superior de tu proyecto RStudio Cloud, haz click 
 
 b. De la lista de opciones en el lado izquierdo de la ventana emergente, selecciona Git / SVN.
 
-c. Haz click en el botón "Crear clave RSA". Aparecerá otro mensaje emergente; haz clic en "Crear". Haz clic en Ver clave pública y copia la clave en el portapapeles.
+c. Haz click en el botón "Crear clave RSA". Aparecerá otro mensaje emergente; haz click en "Crear". Haz click en Ver clave pública y copia la clave en el portapapeles.
 
 d. Navega a Github y ve a tu perfil haciendo click en la esquina superior derecha donde está tu avatar y seleccionando "Tu perfil" en el menú desplegable. En el lado izquierdo de tu página de perfil, selecciona "Editar perfil".
 
-e. Ve a "Claves SSH y GPG" y haga clic en el botón "Nueva clave SSH". Asigna un título a su clave y pégala en el cuadro de texto Clave. Luego haz click en "Agregar clave SSH"
+e. Ve a "Claves SSH y GPG" y haga clic en el botón "Nueva clave SSH". Asigna un título a tu clave y pégala en el cuadro de texto Clave. Luego haz click en "Agregar clave SSH"
 
 F. Vuelve a tu proyecto de RStudio Cloud y ve a la pestaña Terminal en el panel inferior de tu ventana. En el terminal, escribe lo siguiente, pero reemplaza YourUsername y YourRepo con tu nombre de usuario de Git Hub y el nombre del repositorio de Github (como está escrito en la URL de tu repositorio de Git Hub):
 
