@@ -26,13 +26,13 @@ El odbc package, proporciona soporte DBI  y una conexión ODBC.
 
 - MariaDB : MariaDB es una base de datos relacional de código abierto creada por los desarrolladores originales de MySQL. MariaDB proporciona un conector ODBC que se puede usar como reemplazo directo para un conector ODBC MySQL.
 
-- Controladores RStudio Professional : los usuarios de RStudio Server Pro, RStudio Connect o Shiny Server Pro pueden descargar y usar los controladores RStudio Professional sin costo adicional. Estos controladores incluyen un conector ODBC para bases de datos MySQL. RStudio ofrece controladores ODBC profesionales basados en estándares, compatibles. Utilice los Controladores RStudio Professional cuando ejecute R o Shiny con sus sistemas de producción. Consulte los Controladores RStudio Professional para obtener más información
+- Controladores RStudio Professional : los usuarios de RStudio Server Pro, RStudio Connect o Shiny Server Pro pueden descargar y usar los controladores RStudio Professional sin costo adicional. Estos controladores incluyen un conector ODBC para bases de datos MySQL. RStudio ofrece controladores ODBC profesionales basados en estándares, compatibles. Utiliza los Controladores RStudio Professional cuando ejecutes R o Shiny con sus sistemas de producción. Consulta los Controladores RStudio Professional para obtener más información
 
 #### CONFIGURACIONES DE CONEXIÓN
 
 Hay 5 configuraciones necesarias para hacer una conexión:
 
-Driver : consulte la sección previa de controladores para obtener información sobre la configuración
+Driver : consulta la sección previa de controladores para obtener información sobre la configuración
 Server : una ruta de red al servidor de la base de datos
 UID : nombre de usuario utilizado para acceder al servidor MySQL
 PWD : la contraseña correspondiente al UID proporcionado
@@ -47,19 +47,19 @@ install.package(RMySQL)
 install.packages("DBI")
 ```
 
-Establecer la conexión:
+Establecemos la conexión:
 
 ```{r}
 MyDataBase = dbConnect(MySQL(), user='User_DataBase', password='Password_DB', dbname='Name_DataBase', host='Your hosting')
 ```
 
-Listar las tablas de nuestra base de datos:
+Listamos las tablas de nuestra base de datos:
 
 ```{r}
 dbListTables(MyDataBase)
 ```
 
-Listar las columnas de una tabla:
+Listamos las columnas de una tabla:
 
 ```{r}
 dbListFields(MyDataBase, 'Table1')
@@ -74,7 +74,7 @@ head(DataDB)
 
 #### Usando el RMariaDB package
 
-RMariaDB es una interfaz de base de datos y un controlador MariaDB para R. Esta versión tiene como objetivo el pleno cumplimiento de la especificación DBI , como reemplazo del RMySQL package anterior. Para obtener más información, visite RMariaDB el sitio oficial de: rmariadb.r-dbi.org
+RMariaDB es una interfaz de base de datos y un controlador MariaDB para R. Esta versión tiene como objetivo el pleno cumplimiento de la especificación DBI, como reemplazo del RMySQL package anterior. Para obtener más información, visita RMariaDB el sitio oficial en: rmariadb.r-dbi.org
 
 Para instalar desde CRAN:
 
