@@ -1,7 +1,7 @@
 `Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-03`] > [`Actividad-02`] 
 
 ### OBJETIVO
-- Integrar Rstudio con BDs mediante librerías, drivers (odbc drivers) ó el connect pane.
+- Integrar Rstudio con BDs mediante librerías, drivers (odbc drivers).
 
 #### REQUISITOS
 1. Contar con R studio.
