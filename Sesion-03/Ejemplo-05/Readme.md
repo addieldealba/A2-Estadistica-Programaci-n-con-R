@@ -41,14 +41,14 @@ library(XML)
 # Parse the XML file
 xmlfile <- xmlTreeParse("<Your URL to the XML data>")
 ```
-Notarás que los datos se presentan de forma extraña al imprimir el xmlfilevector. Esto se debe a que el archivo XML sigue siendo un documento XML real en R en este momento. Para poner los datos en un marco de datos, primero debes extraer los valores XML. Puedes usar la xmlSApply()función para hacer esto:
+Notarás que los datos se presentan de forma extraña al imprimir el xmlfilevector. Esto se debe a que el archivo XML sigue siendo un documento XML real en R en este momento. Para poner los datos en un dataframe, primero debes extraer los valores XML. Puedes usar la xmlSApply()función para hacer esto:
 
 ```{r}
 topxml <- xmlSApply(topxml,
                     function(x) xmlSApply(x, xmlValue))
 ```         
-El primer argumento de esta función será topxml, ya que es el nodo superior en cuyos hijos desea realizar una determinada función. Luego, enumera la función que desea aplicar a cada nodo secundario. En este caso, desea extraer el contenido de un nodo XML hoja. Esto, en combinación con el primer argumento topxml, asegurará que hagas esto para cada nodo XML.
-¡Finalmente, pones los valores en un marco de datos!
+El primer argumento de esta función será topxml, ya que es el nodo superior en cuyos hijos desea realizar una determinada función. Luego, enumera la función que desea aplicar a cada nodo secundario. En este caso, desea extraer el contenido de un nodo hoja XML. Esto, en combinación con el primer argumento topxml, asegurará que hagas esto para cada nodo hoja en XML.
+¡Finalmente, pones los valores en un data frame!
 
 ```{r}
 xml_df <- data.frame(t(topxml),
@@ -76,7 +76,7 @@ Ten en cuenta que which te permite especificar qué tablas devolver desde dentro
 
 Si esto te da un error en la naturaleza de "no se pudo cargar la entidad externa", no te preocupes: este error ha sido señalado por muchas personas y ha sido confirmado por el autor del paquete.
 
-Puedes solucionar esto utilizando RCurl  en combinación con el paquete XML para leer sus datos:
+Puedes solucionar esto utilizando el paquete RCurl  en combinación con el paquete XML para leer tus datos:
 
 ```{r}
 # Activate the libraries
