@@ -44,7 +44,7 @@ b. Dentro de Terminal, escribe los siguientes comandos pero reemplaza you@exampl
 
 Esto registrará cualquier cambio que realizes bajo tu identidad de usuario específica y hará un seguimiento de quién realizó qué modificaciones.
 
-2. Cometer cambios en Git Hub:
+2. "Commit" cambios en Git Hub:
 
 a. Guarda todos los archivos en RStudio Cloud que hayas editado, si aún no lo has hecho.
 
