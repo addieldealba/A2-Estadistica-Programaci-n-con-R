@@ -43,7 +43,13 @@ b. Dentro de Terminal, escribe los siguientes comandos pero reemplaza you@exampl
 
 Esto registrará cualquier cambio que realice bajo su identidad de usuario específica y hará un seguimiento de quién realizó qué modificaciones.
 
-![RScloud](../images/Rcloudproject.png)
+2. Cometer cambios en Git
+
+a. Guarde todos los archivos en RStudio Cloud que haya editado, si aún no lo ha hecho.
+
+b. En el panel derecho, vaya a la pestaña en el extremo derecho que dice "Git". En esa pestaña, debería ver los archivos que editó y guardó. Haga clic en el cuadro debajo de "En escena" para seleccionar el archivo que desea actualizar en Github.
+
+![RScloud](../images/cloud075.png)
 
 
 ![RScloud](../images/Rcloudproject.png)
