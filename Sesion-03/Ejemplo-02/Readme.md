@@ -9,7 +9,7 @@
 
 #### DESARROLLO
 
-***MySQL
+### MySQL
 
 Hay dos opciones para conectarse a una base de datos MySQL:
 
