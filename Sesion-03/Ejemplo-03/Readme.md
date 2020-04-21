@@ -76,12 +76,12 @@ Si necesitas hacer algo más elaborado que SELECT consultas bastante simples , d
 
 El paquete DBI define una interfaz común entre R y los sistemas de gestión de bases de datos (DBMS). La interfaz define un pequeño conjunto de clases y métodos similares en espíritu al DBI de Perl, JDBC de Java, DB-API de Python y ODBC de Microsoft. Define un conjunto de clases y métodos define qué operaciones son posibles y cómo se realizan:
 
-conectar / desconectar al DBMS
-crear y ejecutar declaraciones en el DBMS
-extraer resultados / resultados de declaraciones
-manejo de errores / excepciones
-información (metadatos) de los objetos de la base de datos
-gestión de transacciones (opcional)
+- conectar / desconectar al DBMS
+- crear y ejecutar declaraciones en el DBMS
+- extraer resultados / resultados de declaraciones
+- manejo de errores / excepciones
+- información (metadatos) de los objetos de la base de datos
+- gestión de transacciones (opcional)
 
 Aquí hay un ejemplo de uso básico que destaca algunas de las capacidades DBI más comunes: establecemos una conexión a una base de datos, la consultamos, buscamos el conjunto de resultados, cerramos el conjunto de resultados y nos desconectamos cuando terminamos:
 
