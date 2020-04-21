@@ -14,7 +14,7 @@
 Hay cuatro paquetes que necesitas en esta actividad. Aquí están las instrucciones de instalación, para que tu código funcione sin problemas:
 
 ```{r}
-# get shiny, DBI, dplyr and dbplyr from CRAN
+# get DBI, dplyr and dbplyr from CRAN
 install.packages("shiny")
 install.packages("DBI")
 install.packages("dplyr")
@@ -35,13 +35,13 @@ En particular, cubriremos:
 
 Tenga en cuenta que no siempre es ideal vincular a una base de datos externa, ya que puede romperse y ciertamente es más costoso desde el punto de vista computacional que tratar con datos locales. Además de trabajar con datos locales en memoria almacenados en marcos de datos, dplyr también trabaja con datos remotos en disco almacenados en bases de datos. Esto es particularmente útil en este escenario:
 
-- Sus datos ya están en una base de datos. Tiene tantos datos que no caben todos en la memoria simultáneamente y necesita usar algún motor de almacenamiento externo. (Si sus datos encajan en la memoria, no hay ninguna ventaja en ponerlos en una base de datos: solo será más lento y más frustrante).
+- Tus datos ya están en una base de datos. Tienes tantos datos que no caben todos en la memoria simultáneamente y necesitas usar algún motor de almacenamiento externo. (Si tus datos encajan en la memoria, no hay ninguna ventaja en ponerlos en una base de datos: solo será más lento y más frustrante).
 
-#### La forma más fácil de conectarse a una base de datos externa desde su aplicación es utilizarla dplyr. 
+#### La forma más fácil de conectarse a una base de datos externa desde tu aplicación es utilizarla dplyr. 
 
-La motivación para admitir bases de datos en dplyr es que nunca extrae el subconjunto o agregado correcto de la base de datos la primera vez, y generalmente debe iterar entre R y SQL muchas veces antes de obtener el conjunto de datos perfecto. Cambiar entre lenguajes es un desafío cognitivo (especialmente porque R y SQL son muy similares), por lo que dplyr le permite escribir código R que se traduce automáticamente a SQL. El objetivo de dplyr no es reemplazar todas las funciones SQL con una función R: eso sería difícil y propenso a errores. En cambio, dplyr solo genera sentencias SELECT, el SQL que escribe con mayor frecuencia como analista.
+La motivación para admitir bases de datos en dplyr es que nunca extrae el subconjunto o agregado correcto de la base de datos la primera vez, y generalmente debe iterar entre R y SQL muchas veces antes de obtener el conjunto de datos perfecto. Cambiar entre lenguajes es un desafío cognitivo (especialmente porque R y SQL son muy similares), por lo que dplyr te permite escribir código R que se traduce automáticamente a SQL. El objetivo de dplyr no es reemplazar todas las funciones SQL con una función R: eso sería difícil y propenso a errores. En cambio, dplyr solo genera sentencias SELECT, el SQL que escribe con mayor frecuencia como analista.
 
-Aquí le mostramos cómo leer las primeras cinco filas de una tabla desde una base de datos remota:
+Aquí te mostramos cómo leer las primeras cinco filas de una tabla desde una base de datos remota:
 
 ```{r}
 library(pool)
@@ -68,7 +68,7 @@ my_db %>% tbl("City") %>% head(5)
 ## 5     5      Amsterdam         NLD Noord-Holland     731200
 
 ```
-Como puede ver, es bastante sencillo.
+Como puedes ver, es bastante sencillo.
 
 #### Paquete DBI
 
