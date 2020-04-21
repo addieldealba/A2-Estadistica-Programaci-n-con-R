@@ -51,9 +51,19 @@ b. En el panel derecho, vaya a la pestaña en el extremo derecho que dice "Git".
 
 ![RScloud](../images/cloud075.png)
 
+c. Haga clic en el botón "Confirmar" en la barra de herramientas. Básicamente, esto guarda los cambios en Git para que pueda enviarlos a Github.
 
-![RScloud](../images/Rcloudproject.png)
+d. Aparecerá una ventana que muestra los cambios que ha realizado. Coloque un mensaje de confirmación, que es una breve descripción de los cambios que ha realizado, y haga clic en Confirmar.
 
+3. Empuje los cambios a Github
+
+a. Elija la rama a la que desea enviar los cambios seleccionándola en el menú desplegable y luego haga clic en el botón con la flecha verde hacia arriba. (Esto también se puede hacer en la ventana principal de RStudio Cloud en la barra de herramientas de la pestaña Git).
+
+![RScloud](../images/cloud0875.png)
+
+b. Una ventana emergente le pedirá que ingrese su nombre de usuario y contraseña para Github. Siga las instrucciones que se le indiquen.
+
+c. Opcional: puede ir a Github y verificar su repositorio de Github para confirmar que sus cambios se enviaron correctamente a Github.
 
 ![RScloud](../images/Rcloudproject.png)
 
