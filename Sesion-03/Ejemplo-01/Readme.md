@@ -18,7 +18,7 @@ Una vez en el workspace creamos un projecto dando click en el botón correspondi
 Después verémos como se inicializa nuestro front end en cloud! de RStudio. Así es como podrías trabajar con Rstudio Cloud en general.
 Como podemos observar es igual al de RStudio Desktop, ahora exploraremos los objetivos de esta clase, que son las interfaces con aplicaciónes externas y repositorios.
 
-Sin embargo, la manera más profesional de trabajar es cuando conectémos Rstudio Cloud con nuestro repositorio de trabajo en Git hub, para esto tenemos que crear un nuevo proyecto desde el inicio con la opción de utilizar un repositorio Git Hub. Para esto sigamos las siguientes instrucciones,
+Sin embargo, la manera más profesional de trabajar es cuando conectémos Rstudio Cloud con nuestro repositorio de trabajo en Git hub, para esto tenemos que crear un nuevo proyecto desde el inicio con la opción de utilizar un repositorio Git Hub. Para esto sigamos las siguientes instrucciones:
 
 ### 1) Configuración de RStudio Cloud
 
