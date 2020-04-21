@@ -65,7 +65,11 @@ b. Una ventana emergente le pedirá que ingrese su nombre de usuario y contrase�
 
 c. Opcional: puede ir a Github y verificar su repositorio de Github para confirmar que sus cambios se enviaron correctamente a Github.
 
-![RScloud](../images/Rcloudproject.png)
+4.  OPCIONAL: evite tener que escribir el nombre de usuario y la contraseña cada vez que desee enviar una edición a Github
+
+a. En la barra de herramientas superior de su proyecto RStudio Cloud, haga clic en "Herramientas" y seleccione "Opciones globales ..." en el menú desplegable
+
+![RScloud](../images/cloud15.png)
 
 
 ![RScloud](../images/Rcloudproject.png)
