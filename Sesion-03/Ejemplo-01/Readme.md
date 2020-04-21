@@ -18,7 +18,7 @@ Una vez en el workspace creamos un projecto dando click en el botón correspondi
 Después verémos como se inicializa nuestro front end en cloud! de RStudio. Así es como podrías trabajar con Rstudio Cloud en general.
 Como podemos observar es igual al de RStudio Desktop, ahora exploraremos los objetivos de esta clase, que son las interfaces con aplicaciónes externas y repositorios.
 
-Sin embargo, la manera más profesional de trabajar es cuando conectémos Rstudio Cloud con nuestro repositorio de trabajo en Git hub, para esto tenemos que crear un nuevo proyecto desde el inicio con la opción de utilizar un repositorio Git Hub. Para esto sigamos las siguientes instrucciones:
+Sin embargo, la manera más profesional de trabajar es cuando conectémos Rstudio Cloud con nuestro repositorio de trabajo en Git Hub, para esto tenemos que crear un nuevo proyecto desde el inicio con la opción de utilizar un repositorio Git Hub. Para esto sigamos las siguientes instrucciones:
 
 ### 1) Configuración de RStudio Cloud
 
@@ -28,9 +28,9 @@ Sin embargo, la manera más profesional de trabajar es cuando conectémos Rstudi
 
 ![RScloud](../images/Newprojectfromrepo.png)
 
-Copia y pega la URL de tu repositorio de Github en el cuadro de solicitud. Ahora tu proyecto RStudio Cloud está conectado a tu repositorio de Github. Cualquier cambio realizado en RStudio Cloud puede reflejarse en Github (Escenario A) y viceversa (Escenario B).
+Copia y pega la URL de tu repositorio de Github en el cuadro de solicitud. Ahora tu proyecto RStudio Cloud está conectado a tu repositorio de Git Hub. Cualquier cambio realizado en RStudio Cloud puede reflejarse en Github (Escenario A) y viceversa (Escenario B).
 
-Escenario A: empuja(push) cambios en RStudio Cloud a Github.
+Escenario A: empuja(push) cambios en RStudio Cloud a Git Hub.
 
 Configurar git en RStudio Cloud:
 
@@ -44,11 +44,11 @@ b. Dentro de Terminal, escribe los siguientes comandos pero reemplaza you@exampl
 
 Esto registrará cualquier cambio que realizes bajo tu identidad de usuario específica y hará un seguimiento de quién realizó qué modificaciones.
 
-2. Cometer cambios en Git:
+2. Cometer cambios en Git Hub:
 
 a. Guarda todos los archivos en RStudio Cloud que hayas editado, si aún no lo has hecho.
 
-b. En el panel derecho, ve a la pestaña en el extremo derecho que dice "Git". En esa pestaña, debería ver los archivos que editaste y guardaste. Haz clic en el cuadro debajo de "En escena" para seleccionar el archivo que deseas actualizar en Github.
+b. En el panel derecho, ve a la pestaña en el extremo derecho que dice "Git". En esa pestaña, debería ver los archivos que editaste y guardaste. Haz clic en el cuadro debajo de "En escena" para seleccionar el archivo que deseas actualizar en Git Hub.
 
 ![RScloud](../images/cloud075.png)
 
@@ -56,17 +56,17 @@ c. Haz clic en el botón "Confirmar" en la barra de herramientas. Básicamente, 
 
 d. Aparecerá una ventana que muestra los cambios que has realizado. Coloca un mensaje de confirmación, que es una breve descripción de los cambios que hayas realizado, y haz clic en Confirmar.
 
-3. Empuja(push) los cambios a Github:
+3. Empuja(push) los cambios a Git Hub:
 
 a. Elije la rama a la que deseas enviar los cambios seleccionándola en el menú desplegable y luego haz clic en el botón con la flecha verde hacia arriba. (Esto también se puede hacer en la ventana principal de RStudio Cloud en la barra de herramientas de la pestaña Git).
 
 ![RScloud](../images/cloud0.png)
 
-b. Una ventana emergente te pedirá que ingrese tu nombre de usuario y contraseña para Github. Sigue las instrucciones que se te indiquen.
+b. Una ventana emergente te pedirá que ingrese tu nombre de usuario y contraseña para Git Hub. Sigue las instrucciones que se te indiquen.
 
-c. Opcional: puedes ir a Github y verificar tu repositorio de Github para confirmar que tus cambios se enviaron correctamente a Github.
+c. Opcional: puedes ir a Git Hub y verificar tu repositorio de Github para confirmar que tus cambios se enviaron correctamente a Git Hub.
 
-4.  OPCIONAL: evita tener que escribir el nombre de usuario y la contraseña cada vez que deseas enviar una edición a Github:
+4. Evita tener que escribir el nombre de usuario y la contraseña cada vez que deseas enviar una edición a Git Hub:
 
 a. En la barra de herramientas superior de tu proyecto RStudio Cloud, haz click en "Herramientas" y seleccione "Opciones globales ..." en el menú desplegable
 
@@ -80,20 +80,20 @@ d. Navega a Github y ve a tu perfil haciendo click en la esquina superior derech
 
 e. Ve a "Claves SSH y GPG" y haga clic en el botón "Nueva clave SSH". Asigna un título a su clave y pégala en el cuadro de texto Clave. Luego haz click en "Agregar clave SSH"
 
-F. Vuelve a tu proyecto de RStudio Cloud y ve a la pestaña Terminal en el panel inferior de tu ventana. En el terminal, escribe lo siguiente, pero reemplaza YourUsername y YourRepo con tu nombre de usuario de Github y el nombre del repositorio de Github (como está escrito en la URL de tu repositorio de Github):
+F. Vuelve a tu proyecto de RStudio Cloud y ve a la pestaña Terminal en el panel inferior de tu ventana. En el terminal, escribe lo siguiente, pero reemplaza YourUsername y YourRepo con tu nombre de usuario de Git Hub y el nombre del repositorio de Github (como está escrito en la URL de tu repositorio de Git Hub):
 
 ![RScloud](../images/cloud2.png)
 
-Escenario B: extracción de cambios de Github a RStudio Cloud
+Escenario B: extracción de cambios de Git Hub a RStudio Cloud
 
-1. "Commmit" los cambios en Github. Esto se realiza a través de un formulario en la parte inferior de tu archivo en Github: completa una breve descripción de los cambios que está confirmando y selecciona "Confirmar directamente en la rama maestra". Luego haz click en "Confirmar cambios".
+1. "Commmit" los cambios en Git Hub. Esto se realiza a través de un formulario en la parte inferior de tu archivo en Git Hub: completa una breve descripción de los cambios que está confirmando y selecciona "Confirmar directamente en la rama maestra". Luego haz click en "Confirmar cambios".
 
 ![RScloud](../images/cloud29.png)
 
-2. "Pull" de los cambios de Github. 
+2. "Pull" de los cambios de Git Hub. 
 
 a. En RStudio Cloud, ve al proyecto correspondiente de RStudio Cloud.
 
-b. En el panel derecho, ve a la pestaña en el extremo derecho que dice "Git". En la barra de herramientas, haz click en la flecha azul que apunta hacia abajo. Esto extraerá los cambios que realizaste desde Github en RStudio Cloud. El archivo debe actualizarse automáticamente después de hacer click.
+b. En el panel derecho, ve a la pestaña en el extremo derecho que dice "Git". En la barra de herramientas, haz click en la flecha azul que apunta hacia abajo. Esto extraerá los cambios que realizaste desde Git Hub en RStudio Cloud. El archivo debe actualizarse automáticamente después de hacer click.
 
 ![RScloud](../images/cloud3.png)
