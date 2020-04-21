@@ -1,4 +1,4 @@
-`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-03`] > [`Actividad-02`] 
+`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-03`] > [`Actividad-03`] 
 
 ### OBJETIVO
 - Utilizar dplyr y DBI para hacer queries a MySQL.
