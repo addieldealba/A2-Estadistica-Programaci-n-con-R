@@ -59,7 +59,7 @@ d. Aparecerá una ventana que muestra los cambios que ha realizado. Coloque un m
 
 a. Elija la rama a la que desea enviar los cambios seleccionándola en el menú desplegable y luego haga clic en el botón con la flecha verde hacia arriba. (Esto también se puede hacer en la ventana principal de RStudio Cloud en la barra de herramientas de la pestaña Git).
 
-![RScloud](../images/cloud0875.png)
+![RScloud](../images/cloud0.png)
 
 b. Una ventana emergente le pedirá que ingrese su nombre de usuario y contraseña para Github. Siga las instrucciones que se le indiquen.
 
