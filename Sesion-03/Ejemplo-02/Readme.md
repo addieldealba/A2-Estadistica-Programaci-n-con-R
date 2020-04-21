@@ -13,7 +13,7 @@
 
 Para conectarse a una base de datos MySQL:
 
-- Usar el odbc package en R. (> devtools::install_github("r-dbi/odbc"))
+- Usar el odbc package en R. > devtools::install_github("r-dbi/odbc")
 - Usar el paquete > install.package(RMySQL)
 
 #### Usando el odbc package.
