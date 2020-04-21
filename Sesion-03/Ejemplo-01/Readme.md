@@ -69,18 +69,30 @@ c. Opcional: puede ir a Github y verificar su repositorio de Github para confirm
 
 a. En la barra de herramientas superior de su proyecto RStudio Cloud, haga clic en "Herramientas" y seleccione "Opciones globales ..." en el menú desplegable
 
-![RScloud](../images/cloud15.png)
+![RScloud](../images/cloud12.png)
 
+b. De la lista de opciones en el lado izquierdo de la ventana emergente, seleccione Git / SVN.
 
-![RScloud](../images/Rcloudproject.png)
+c. Haga clic en el botón "Crear clave RSA". Aparecerá otro mensaje emergente; haga clic en "Crear". Haga clic en Ver clave pública y copie la clave en el portapapeles.
 
-Ahora 
-```{r}
+d. Navegue a Github y vaya a su perfil haciendo clic en la esquina superior derecha donde está su avatar y seleccionando "Su perfil" en el menú desplegable. En el lado izquierdo de su página de perfil, seleccione "Editar perfil".
 
-}
-```
-En 
-```{r}
+e. Vaya a "Claves SSH y GPG" y haga clic en el botón "Nueva clave SSH". Asigne un título a su clave y péguela en el cuadro de texto Clave. Luego haga clic en "Agregar clave SSH"
 
-```
+F. Vuelva a su proyecto de RStudio Cloud y vaya a la pestaña Terminal en el panel inferior de su ventana. En el terminal, escriba lo siguiente, pero reemplace YourUsername y YourRepo con su nombre de usuario de Github y el nombre del repositorio de Github (como está escrito en la URL de su repositorio de Github):
 
+![RScloud](../images/cloud2.png)
+
+Scenario B: Pulling changes from Github to RStudio Cloud
+
+1. Commit changes in Github. This is done via a form at the bottom of your file in Github - fill out a brief description of the changes you’re committing, and select “Commit directly to the master branch.” Then click “Commit changes”.
+
+![RScloud](../images/cloud29.png)
+
+2. Pull changes from Github. 
+
+a. In RStudio Cloud, go to your corresponding RStudio Cloud project.
+
+b. On the right panel, go to the tab on the far right that says “Git.” On the toolbar, click the blue arrow pointing downwards. This will pull the changes you made from Github into RStudio Cloud. The file should automatically be updated after you click.
+
+![RScloud](../images/cloud3.png)
