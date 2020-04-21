@@ -1,7 +1,7 @@
 `Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-03`] > [`Actividad-03`] 
 
 ### OBJETIVO
-- Utilizar dplyr y DBI para hacer queries a MySQL.
+- Utilizar dplyr y pool para hacer queries a MySQL.
 
 #### REQUISITOS
 1. Contar con R studio.
@@ -9,7 +9,7 @@
 
 #### DESARROLLO
 
-#### Utilizar dplyr y DBI para hacer queries a MySQL
+#### Utilizar dplyr y pool para hacer queries a MySQL
 
 Hay cuatro paquetes que necesitas en esta actividad. Aquí están las instrucciones de instalación, para que tu código funcione sin problemas:
 
@@ -69,40 +69,3 @@ my_db %>% tbl("City") %>% head(5)
 
 ```
 Como puedes ver, es bastante sencillo.
-
-#### Paquete DBI
-
-Si necesitas hacer algo más elaborado que SELECT consultas bastante simples , dplyr no podrá ayudarte. En ese caso, te recomendamos que utilices DBI para conectarte a su base de datos si hay un controlador adecuado. Aquí hay un dato sobre DBI de su página de Git Hub :
-
-El paquete DBI define una interfaz común entre R y los sistemas de gestión de bases de datos (DBMS). La interfaz define un pequeño conjunto de clases y métodos similares en espíritu al DBI de Perl, JDBC de Java, DB-API de Python y ODBC de Microsoft. Define un conjunto de clases y métodos define qué operaciones son posibles y cómo se realizan:
-
-- conectar / desconectar al DBMS
-- crear y ejecutar declaraciones en el DBMS
-- extraer resultados / resultados de declaraciones
-- manejo de errores / excepciones
-- información (metadatos) de los objetos de la base de datos
-- gestión de transacciones (opcional)
-
-Aquí hay un ejemplo de uso básico que destaca algunas de las capacidades DBI más comunes: establecemos una conexión a una base de datos, la consultamos, buscamos el conjunto de resultados, cerramos el conjunto de resultados y nos desconectamos cuando terminamos:
-
-```{r}
-library(DBI)
-conn <- dbConnect(
-    drv = RMySQL::MySQL(),
-    dbname = "shinydemo",
-    host = "shiny-demo.csa7qlmguqrf.us-east-1.rds.amazonaws.com",
-    username = "guest",
-    password = "guest")
-rs <- dbSendQuery(conn, "SELECT * FROM City LIMIT 5;")
-dbFetch(rs)
-##   ID           Name CountryCode      District Population
-## 1  1          Kabul         AFG         Kabol    1780000
-## 2  2       Qandahar         AFG      Qandahar     237500
-## 3  3          Herat         AFG         Herat     186800
-## 4  4 Mazar-e-Sharif         AFG         Balkh     127800
-## 5  5      Amsterdam         NLD Noord-Holland     731200
-dbClearResult(rs)
-dbDisconnect(conn)
-```
-
-
