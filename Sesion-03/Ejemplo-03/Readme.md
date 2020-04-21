@@ -1,7 +1,7 @@
 `Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-03`] > [`Actividad-02`] 
 
 ### OBJETIVO
-- Integrar Rstudio con BDs mediante librerías, drivers (odbc drivers).
+- Utilizar dplyr y DBI para hacer queries a MySQL.
 
 #### REQUISITOS
 1. Contar con R studio.
@@ -9,91 +9,110 @@
 
 #### DESARROLLO
 
-#### MySQL
+#### Utilizar dplyr y DBI para hacer queries a MySQL
 
-Para conectarse a una base de datos MySQL:
-
-- Usar el odbc package en R. > devtools::install_github("r-dbi/odbc")
-- Usar el paquete > install.package(RMySQL)
-
-#### Usando el odbc package.
-
-El odbc package, proporciona soporte DBI  y una conexión ODBC.
-
-### Driver (opciones)
-
-- MySQL : el sitio web oficial de MySQL proporciona un controlador ODBC descargable para MySQL.
-
-- MariaDB : MariaDB es una base de datos relacional de código abierto creada por los desarrolladores originales de MySQL. MariaDB proporciona un conector ODBC que se puede usar como reemplazo directo para un conector ODBC MySQL.
-
-- Controladores RStudio Professional : los usuarios de RStudio Server Pro, RStudio Connect o Shiny Server Pro pueden descargar y usar los controladores RStudio Professional sin costo adicional. Estos controladores incluyen un conector ODBC para bases de datos MySQL. RStudio ofrece controladores ODBC profesionales basados en estándares, compatibles. Utilice los Controladores RStudio Professional cuando ejecute R o Shiny con sus sistemas de producción. Consulte los Controladores RStudio Professional para obtener más información
-
-#### CONFIGURACIONES DE CONEXIÓN
-
-Hay 5 configuraciones necesarias para hacer una conexión:
-
-Driver : consulte la sección previa de controladores para obtener información sobre la configuración
-Server : una ruta de red al servidor de la base de datos
-UID : nombre de usuario utilizado para acceder al servidor MySQL
-PWD : la contraseña correspondiente al UID proporcionado
-Port : debe establecerse en 3306
-
-Instalamos los paquetes necesarios:
+Hay cuatro paquetes que necesita en esta serie de artículos. Aquí están las instrucciones de instalación, para que su código funcione sin problemas:
 
 ```{r}
-# get packages
-devtools::install_github("r-dbi/odbc")
-install.package(RMySQL)
+# get shiny, DBI, dplyr and dbplyr from CRAN
+install.packages("shiny")
 install.packages("DBI")
-```
+install.packages("dplyr")
+install.packages("dbplyr")
 
-Establecer la conexión:
+# get pool from GitHub, since it's not yet on CRAN
+devtools::install_github("rstudio/pool")
+```
+#### Visión general
+
+A medida que las aplicaciones Shiny crecen y se vuelven más complejas, un problema recurrente ha sido el de integrar una base de datos externa en una aplicación. Si bien esto ya es posible, hasta ahora depende principalmente de los autores de la aplicación averiguar el controlador de base de datos apropiado para R y cómo administrar las conexiones de la base de datos dentro de la propia aplicación. 
+
+En particular, cubriremos:
+
+- Cómo usar el paquete dplyr para leer datos de una base de datos externa;
+
+- Cómo usar el paquete DBI para conectar a una base de datos externa;
+
+- Cómo prevenir inyecciones SQL;
+
+- Cómo administrar las conexiones, evitar fugas y garantizar el mejor rendimiento con el poolpaquete;
+
+- Cómo integrar el poolpaquete con dplyr.
+
+Tenga en cuenta que no siempre es ideal vincular a una base de datos externa, ya que puede romperse y ciertamente es más costoso desde el punto de vista computacional que tratar con datos locales. Para citar a Hadley sobre cuándo usar dplyrcon bases de datos frente a datos en memoria :
+
+Además de trabajar con datos locales en memoria almacenados en marcos de datos, dplyr también trabaja con datos remotos en disco almacenados en bases de datos. Esto es particularmente útil en dos escenarios:
+
+Sus datos ya están en una base de datos.
+Tiene tantos datos que no caben todos en la memoria simultáneamente y necesita usar algún motor de almacenamiento externo.
+(Si sus datos encajan en la memoria, no hay ninguna ventaja en ponerlos en una base de datos: solo será más lento y más frustrante).
+
+La forma más fácil de conectarse a una base de datos externa desde su aplicación es utilizarla dplyr. 
+
+La motivación para admitir bases de datos en dplyr es que nunca extrae el subconjunto o agregado correcto de la base de datos la primera vez, y generalmente debe iterar entre R y SQL muchas veces antes de obtener el conjunto de datos perfecto. Cambiar entre idiomas es un desafío cognitivo (especialmente porque R y SQL son muy similares), por lo que dplyr le permite escribir código R que se traduce automáticamente a SQL. El objetivo de dplyr no es reemplazar todas las funciones SQL con una función R: eso sería difícil y propenso a errores. En cambio, dplyr solo genera sentencias SELECT, el SQL que escribe con mayor frecuencia como analista.
+
+Aquí le mostramos cómo leer las primeras cinco filas de una tabla desde una base de datos remota:
 
 ```{r}
-MyDataBase = dbConnect(MySQL(), user='User_DataBase', password='Password_DB', dbname='Name_DataBase', host='Your hosting')
+library(pool)
+library(dplyr)
+
+my_db <- dbPool(
+  RMySQL::MySQL(), 
+  dbname = "shinydemo",
+  host = "shiny-demo.csa7qlmguqrf.us-east-1.rds.amazonaws.com",
+  username = "guest",
+  password = "guest"
+)
+
+# get the first 5 rows:
+my_db %>% tbl("City") %>% head(5)
+## # Source:   lazy query [?? x 5]
+## # Database: mysql 10.0.17-MariaDB [guest@shiny-demo.csa7qlmguqrf.us-east-1.rds.amazonaws.com:/shinydemo]
+##      ID           Name CountryCode      District Population
+##   <dbl>          <chr>       <chr>         <chr>      <dbl>
+## 1     1          Kabul         AFG         Kabol    1780000
+## 2     2       Qandahar         AFG      Qandahar     237500
+## 3     3          Herat         AFG         Herat     186800
+## 4     4 Mazar-e-Sharif         AFG         Balkh     127800
+## 5     5      Amsterdam         NLD Noord-Holland     731200
+
 ```
+Como puede ver, es bastante sencillo.
 
-Listar las tablas de nuestra base de datos:
+Paquete DBI
 
-```{r}
-dbListTables(MyDataBase)
-```
+Si necesita hacer algo más elaborado que SELECT consultas bastante simples , dplyr no podrá ayudarlo. En ese caso, le recomendamos encarecidamente que utilice DBIpara conectarse a su base de datos si hay un controlador adecuado. Aquí hay un dato sobre DBI de su página de github :
 
-Listar las columnas de una tabla:
+El paquete DBI define una interfaz común entre R y los sistemas de gestión de bases de datos (DBMS). La interfaz define un pequeño conjunto de clases y métodos similares en espíritu al DBI de Perl, JDBC de Java, DB-API de Python y ODBC de Microsoft. Define un conjunto de clases y métodos define qué operaciones son posibles y cómo se realizan:
 
-```{r}
-dbListFields(MyDataBase, 'Table1')
-```
+conectar / desconectar al DBMS
+crear y ejecutar declaraciones en el DBMS
+extraer resultados / resultados de declaraciones
+manejo de errores / excepciones
+información (metadatos) de los objetos de la base de datos
+gestión de transacciones (opcional)
 
-Ahora, tenemos conexión con la base de datos y utilizando la función "dbGetQuery", podemos obtener los datos que necesitamos:
+Aquí hay un ejemplo de uso básico que destaca algunas de las capacidades DBI más comunes: establecemos una conexión a una base de datos, la consultamos, buscamos el conjunto de resultados, cerramos el conjunto de resultados y nos desconectamos cuando terminamos:
 
-```{r}
-DataDB = dbGetQuery(MyDataBase, "select * from Table1")
-head(DataDB)
-```
-
-#### Usando el RMariaDB package
-
-RMariaDB es una interfaz de base de datos y un controlador MariaDB para R. Esta versión tiene como objetivo el pleno cumplimiento de la especificación DBI , como reemplazo del RMySQL package anterior. Para obtener más información, visite RMariaDB el sitio oficial de: rmariadb.r-dbi.org
-
-Para instalar desde CRAN:
-
-```{r}
-install.packages("RMariaDB")
-The development version from github:
-```
-Para instalar la versión de desarrollo:
-
-```{r}
-# install.packages("remotes")
-remotes::install_github("r-dbi/DBI")
-remotes::install_github("r-dbi/RMariaDB")
-```
-
-Para conectar:
 ```{r}
 library(DBI)
-# Connect to my-db as defined in ~/.my.cnf
-con <- dbConnect(RMariaDB::MariaDB(), group = "my-db")
+conn <- dbConnect(
+    drv = RMySQL::MySQL(),
+    dbname = "shinydemo",
+    host = "shiny-demo.csa7qlmguqrf.us-east-1.rds.amazonaws.com",
+    username = "guest",
+    password = "guest")
+rs <- dbSendQuery(conn, "SELECT * FROM City LIMIT 5;")
+dbFetch(rs)
+##   ID           Name CountryCode      District Population
+## 1  1          Kabul         AFG         Kabol    1780000
+## 2  2       Qandahar         AFG      Qandahar     237500
+## 3  3          Herat         AFG         Herat     186800
+## 4  4 Mazar-e-Sharif         AFG         Balkh     127800
+## 5  5      Amsterdam         NLD Noord-Holland     731200
+dbClearResult(rs)
+dbDisconnect(conn)
 ```
+
 
