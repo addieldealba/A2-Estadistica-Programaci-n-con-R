@@ -31,9 +31,7 @@ En particular, cubriremos:
 
 - Cómo usar el paquete dplyr para leer datos de una base de datos externa;
 
-- Cómo usar el paquete DBI para conectar a una base de datos externa;
-
-Tenga en cuenta que no siempre es ideal vincular a una base de datos externa, ya que puede romperse y ciertamente es más costoso desde el punto de vista computacional que tratar con datos locales. Además de trabajar con datos locales en memoria almacenados en marcos de datos, dplyr también trabaja con datos remotos en disco almacenados en bases de datos. Esto es particularmente útil en este escenario:
+Tenga en cuenta que no siempre es ideal vincular a una base de datos externa, ya que puede fallar y ciertamente es más costoso desde el punto de vista computacional que tratar con datos locales. Además de trabajar con datos locales en memoria almacenados en marcos de datos, dplyr también trabaja con datos remotos en disco almacenados en bases de datos. Esto es particularmente útil en este escenario:
 
 - Tus datos ya están en una base de datos. Tienes tantos datos que no caben todos en la memoria simultáneamente y necesitas usar algún motor de almacenamiento externo. (Si tus datos encajan en la memoria, no hay ninguna ventaja en ponerlos en una base de datos: solo será más lento y más frustrante).
 
