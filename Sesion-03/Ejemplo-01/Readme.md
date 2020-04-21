@@ -4,7 +4,7 @@
 - Conectar tu repositorio en Git Hub a RStudio.
 
 #### REQUISITOS
-1. Leer prework sobre como crear una cuenta de R Studio Cloud.
+1. Leer prework sobre como crear una cuenta de RStudio Cloud.
 
 #### DESARROLLO
 
