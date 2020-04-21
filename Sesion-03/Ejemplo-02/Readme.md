@@ -9,10 +9,14 @@
 
 #### DESARROLLO
 
-Limpiamos el workspace como buena práctica de programación:
-```{r}
-rm(list=ls())
-```
+***MySQL
+
+Hay dos opciones para conectarse a una base de datos MySQL:
+
+Usar el odbcpaquete con un controlador de base de datos
+Usando el RMariaDBpaquete
+Usando el odbcpaquete
+El odbcpaquete, en combinación con un controlador, proporciona DBIsoporte y una conexión ODBC
 Como ya conocemos, así es como se define una función en R:
 ```{r}
 
