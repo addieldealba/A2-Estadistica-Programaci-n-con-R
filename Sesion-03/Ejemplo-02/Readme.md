@@ -22,7 +22,7 @@ El odbc package, proporciona soporte DBI  y una conexión ODBC.
 
 ### Driver (opciones)
 
-- MySQL : el sitio web oficial de MySQL proporciona un controlador ODBC descargable para MySQL: MySQL Connector
+- MySQL : el sitio web oficial de MySQL proporciona un controlador ODBC descargable para MySQL.
 
 - MariaDB : MariaDB es una base de datos relacional de código abierto creada por los desarrolladores originales de MySQL. MariaDB proporciona un conector ODBC que se puede usar como reemplazo directo para un conector ODBC MySQL.
 
@@ -50,7 +50,6 @@ install.packages("DBI")
 Establecer la conexión:
 
 ```{r}
-
 MyDataBase = dbConnect(MySQL(), user='User_DataBase', password='Password_DB', dbname='Name_DataBase', host='Your hosting')
 ```
 
@@ -59,6 +58,7 @@ Listar las tablas de nuestra base de datos:
 ```{r}
 dbListTables(MyDataBase)
 ```
+
 Listar las columnas de una tabla:
 
 ```{r}
