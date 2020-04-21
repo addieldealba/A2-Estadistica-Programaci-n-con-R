@@ -41,6 +41,7 @@ b. Dentro de Terminal, escribe los siguientes comandos pero reemplaza you@exampl
 
 ![RScloud](../images/cloud1.png)
 
+Esto registrará cualquier cambio que realice bajo su identidad de usuario específica y hará un seguimiento de quién realizó qué modificaciones.
 
 ![RScloud](../images/Rcloudproject.png)
 
