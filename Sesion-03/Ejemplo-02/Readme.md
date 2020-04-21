@@ -9,44 +9,64 @@
 
 #### DESARROLLO
 
-### MySQL
+#### MySQL
 
 Hay dos opciones para conectarse a una base de datos MySQL:
 
-Usar el odbcpaquete con un controlador de base de datos
+- Usar el odbc package con un controlador de base de datos.
+- Usando el RMariaDB package.
+
+#### Usando el odbc package.
+
+El odbc package, en combinación con un controlador, proporciona soporte DBI  y una conexión ODBC.
+
+### Opciones de driver 
+
+- MySQL : el sitio web oficial de MySQL proporciona un controlador ODBC descargable para MySQL: MySQL Connector
+
+- MariaDB : MariaDB es una base de datos relacional de código abierto creada por los desarrolladores originales de MySQL. MariaDB proporciona un conector ODBC que se puede usar como reemplazo directo para un conector ODBC MySQL: conector MariaDB
+
+- Controladores RStudio Professional : los usuarios de RStudio Server Pro, RStudio Connect o Shiny Server Pro pueden descargar y usar los controladores RStudio Professional sin costo adicional. Estos controladores incluyen un conector ODBC para bases de datos MySQL. RStudio ofrece controladores ODBC profesionales basados en estándares, compatibles. Utilice los Controladores RStudio Professional cuando ejecute R o Shiny con sus sistemas de producción. Consulte los Controladores RStudio Professional para obtener más información
+
+#### CONFIGURACIONES DE CONEXIÓN
+
+Hay 5 configuraciones necesarias para hacer una conexión:
+
+Driver : consulte la sección previa de controladores para obtener información sobre la configuración
+Server : una ruta de red al servidor de la base de datos
+UID : nombre de usuario utilizado para acceder al servidor MySQL
+PWD : la contraseña correspondiente al UID proporcionado
+Port : debe establecerse en 3306
+```{r}
+con <- DBI::dbConnect(odbc::odbc(),
+                      Driver   = "[your driver's name]",
+                      Server   = "[your server's path]",
+                      UID      = rstudioapi::askForPassword("Database user"),
+                      PWD      = rstudioapi::askForPassword("Database password"),
+                      Port     = 3306)
+}
+```
 Usando el RMariaDBpaquete
-Usando el odbcpaquete
-El odbcpaquete, en combinación con un controlador, proporciona DBIsoporte y una conexión ODBC
-Como ya conocemos, así es como se define una función en R:
-```{r}
+RMariaDBes una interfaz de base de datos y un controlador MariaDB para R. Esta versión tiene como objetivo el pleno cumplimiento de la especificación DBI , como reemplazo del RMySQL package anterior. Para obtener más información, visite RMariaDB el sitio oficial de: rmariadb.r-dbi.org
 
-{
-#	Manipular argumentos arg1 y arg2 de cierta forma y regresar un valor
-}
-```
-  
-```{r}
-boring_function <- function(x) {
-  x
-}
-```
+Para instalar desde CRAN:
 
 ```{r}
-
+install.packages("RMariaDB")
+The development version from github:
 ```
+Para instalar la versión de desarrollo:
 
-### Ahora 
-
-Para esto hay que abrir el editor de scripts con un script nuevo:
-![RScript](../images/RScript.png)
-
-Ahora 
 ```{r}
-
-}
+# install.packages("remotes")
+remotes::install_github("r-dbi/DBI")
+remotes::install_github("r-dbi/RMariaDB")
 ```
-En 
+
+Para conectar:
 ```{r}
-
+library(DBI)
+# Connect to my-db as defined in ~/.my.cnf
+con <- dbConnect(RMariaDB::MariaDB(), group = "my-db")
 ```
-Paragraph
+
