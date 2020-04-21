@@ -1,99 +1,109 @@
-`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-03`] > [`Actividad-02`] 
+`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-03`] > [`Actividad-05`] 
 
 ### OBJETIVO
-- Integrar Rstudio con BDs mediante librerías, drivers (odbc drivers).
+- Tomar datos de url(tablas) y archivos xml y .json (fetch) desde Rstudio.
 
 #### REQUISITOS
 1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion03/Ejemplo-02`
+1. Usar la carpeta de trabajo `Sesion03/Ejemplo-05`
 
 #### DESARROLLO
 
-#### MySQL
+### Leer archivos JSON en R
 
-Para conectarse a una base de datos MySQL:
+Para obtener archivos JSON en R, primero debes instalar o cargar el paquete rjson. 
 
-- Usar el odbc package en R. > devtools::install_github("r-dbi/odbc")
-- Usar el paquete > install.package(RMySQL)
+Una vez hecho esto, puedes usar la función fromJSON(). Aquí tienes dos opciones:
 
-#### Usando el odbc package.
+- Tu archivo JSON se almacena en tu directorio de trabajo:
+```{r}
+# Activate `rjson`
+library(rjson)
 
-El odbc package, proporciona soporte DBI  y una conexión ODBC.
+# Import data from json file
+JsonData <- fromJSON(file= "<filename.json>" )
+````
+- Tu archivo JSON está disponible a través de una URL:
+```{r}
+# Activate `rjson`
+library(rjson)
 
-### Driver (opciones)
-
-- MySQL : el sitio web oficial de MySQL proporciona un controlador ODBC descargable para MySQL.
-
-- MariaDB : MariaDB es una base de datos relacional de código abierto creada por los desarrolladores originales de MySQL. MariaDB proporciona un conector ODBC que se puede usar como reemplazo directo para un conector ODBC MySQL.
-
-- Controladores RStudio Professional : los usuarios de RStudio Server Pro, RStudio Connect o Shiny Server Pro pueden descargar y usar los controladores RStudio Professional sin costo adicional. Estos controladores incluyen un conector ODBC para bases de datos MySQL. RStudio ofrece controladores ODBC profesionales basados en estándares, compatibles. Utilice los Controladores RStudio Professional cuando ejecute R o Shiny con sus sistemas de producción. Consulte los Controladores RStudio Professional para obtener más información
-
-#### CONFIGURACIONES DE CONEXIÓN
-
-Hay 5 configuraciones necesarias para hacer una conexión:
-
-Driver : consulte la sección previa de controladores para obtener información sobre la configuración
-Server : una ruta de red al servidor de la base de datos
-UID : nombre de usuario utilizado para acceder al servidor MySQL
-PWD : la contraseña correspondiente al UID proporcionado
-Port : debe establecerse en 3306
-
-Instalamos los paquetes necesarios:
+# Import data from json file
+JsonData <- fromJSON(file= "<URL to your JSON file>" )
+````
+#### Leer datos XML en R
+Si deseas obtener datos XML en R, una de las formas más fáciles es mediante el uso del paquete XML. Primero, asegúrate de instalar y cargar el paquete XML en tu espacio de trabajo, tal como se demostró anteriormente. Luego, puedes usar xmlTreeParse() para analizar el archivo XML directamente desde la web:
 
 ```{r}
-# get packages
-devtools::install_github("r-dbi/odbc")
-install.package(RMySQL)
-install.packages("DBI")
-```
+# Activate the `XML` library
+library(XML)
 
-Establecer la conexión:
+# Parse the XML file
+xmlfile <- xmlTreeParse("<Your URL to the XML data>")
+```
+Notarás que los datos se presentan de forma extraña al imprimir el xmlfilevector. Esto se debe a que el archivo XML sigue siendo un documento XML real en R en este momento. Para poner los datos en un marco de datos, primero debes extraer los valores XML. Puedes usar la xmlSApply()función para hacer esto:
 
 ```{r}
-MyDataBase = dbConnect(MySQL(), user='User_DataBase', password='Password_DB', dbname='Name_DataBase', host='Your hosting')
-```
-
-Listar las tablas de nuestra base de datos:
-
-```{r}
-dbListTables(MyDataBase)
-```
-
-Listar las columnas de una tabla:
+topxml <- xmlSApply(topxml,
+                    function(x) xmlSApply(x, xmlValue))
+```         
+El primer argumento de esta función será topxml, ya que es el nodo superior en cuyos hijos desea realizar una determinada función. Luego, enumera la función que desea aplicar a cada nodo secundario. En este caso, desea extraer el contenido de un nodo XML hoja. Esto, en combinación con el primer argumento topxml, asegurará que hagas esto para cada nodo XML.
+¡Finalmente, pones los valores en un marco de datos!
 
 ```{r}
-dbListFields(MyDataBase, 'Table1')
-```
+xml_df <- data.frame(t(topxml),
+                     row.names=NULL)
+````
 
-Ahora, tenemos conexión con la base de datos y utilizando la función "dbGetQuery", podemos obtener los datos que necesitamos:
+Si crees que los pasos anteriores son demasiado complicados, simplemente haz lo siguiente:
+```{r}
+url <- "<a URL with XML data>"
+data_df <- xmlToDataFrame(url)
+````
+
+### Importar datos de tablas HTML a R
+De las tablas HTML a R es bastante sencillo:
 
 ```{r}
-DataDB = dbGetQuery(MyDataBase, "select * from Table1")
-head(DataDB)
-```
+# Assign your URL to `url`
+url <- "<a URL>"
 
-#### Usando el RMariaDB package
+# Read the HTML table
+data_df <- readHTMLTable(url,
+                         which=3)
+````
+Ten en cuenta que which te permite especificar qué tablas devolver desde dentro del documento.
 
-RMariaDB es una interfaz de base de datos y un controlador MariaDB para R. Esta versión tiene como objetivo el pleno cumplimiento de la especificación DBI , como reemplazo del RMySQL package anterior. Para obtener más información, visite RMariaDB el sitio oficial de: rmariadb.r-dbi.org
+Si esto te da un error en la naturaleza de "no se pudo cargar la entidad externa", no te preocupes: este error ha sido señalado por muchas personas y ha sido confirmado por el autor del paquete.
 
-Para instalar desde CRAN:
-
-```{r}
-install.packages("RMariaDB")
-The development version from github:
-```
-Para instalar la versión de desarrollo:
+Puedes solucionar esto utilizando RCurl  en combinación con el paquete XML para leer sus datos:
 
 ```{r}
-# install.packages("remotes")
-remotes::install_github("r-dbi/DBI")
-remotes::install_github("r-dbi/RMariaDB")
-```
+# Activate the libraries
+library(XML)
+library(RCurl)
 
-Para conectar:
+# Assign your URL to `url`
+url <- "YourURL"
+
+# Get the data
+urldata <- getURL(url)
+
+# Read the HTML table
+data <- readHTMLTable(urldata,
+                      stringsAsFactors = FALSE)
+````
+¡Ten en cuenta que no deseas que las cadenas se registren como factores o variables categóricas! También puedes usar el paquete httr para lograr exactamente lo mismo, excepto por el hecho de que querrás convertir los objetos sin procesar del contenido de la URL en caracteres mediante el rawToChar argumento:
+
 ```{r}
-library(DBI)
-# Connect to my-db as defined in ~/.my.cnf
-con <- dbConnect(RMariaDB::MariaDB(), group = "my-db")
-```
+# Activate `httr`
+library(httr)
+
+# Get the URL data
+urldata <- GET(url)
+
+# Read the HTML table
+data <- readHTMLTable(rawToChar(urldata$content),
+                      stringsAsFactors = FALSE)
+````
 
