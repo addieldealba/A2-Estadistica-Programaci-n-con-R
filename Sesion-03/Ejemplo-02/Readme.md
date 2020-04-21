@@ -13,12 +13,12 @@
 
 Hay dos opciones para conectarse a una base de datos MySQL:
 
-- Usar el odbc package con un controlador de base de datos.
-- Usando el RMariaDB package.
+- Usar el odbc package en R.
+- Usando el RMariaDB package en R.
 
 #### Usando el odbc package.
 
-El odbc package, en combinación con un controlador, proporciona soporte DBI  y una conexión ODBC.
+El odbc package, proporciona soporte DBI  y una conexión ODBC.
 
 ### Opciones de driver 
 
@@ -32,12 +32,27 @@ El odbc package, en combinación con un controlador, proporciona soporte DBI  y 
 
 Hay 5 configuraciones necesarias para hacer una conexión:
 
+devtools::install_github("r-dbi/odbc")
+
+install.packages("shiny")
+install.packages("DBI")
+install.packages("dplyr")
+install.packages("dbplyr")
+
 Driver : consulte la sección previa de controladores para obtener información sobre la configuración
 Server : una ruta de red al servidor de la base de datos
 UID : nombre de usuario utilizado para acceder al servidor MySQL
 PWD : la contraseña correspondiente al UID proporcionado
 Port : debe establecerse en 3306
+
 ```{r}
+# get DBI, dplyr and dbplyr from CRAN
+devtools::install_github("r-dbi/odbc")
+install.packages("shiny")
+install.packages("DBI")
+install.packages("dplyr")
+install.packages("dbplyr")
+
 con <- DBI::dbConnect(odbc::odbc(),
                       Driver   = "[your driver's name]",
                       Server   = "[your server's path]",
@@ -46,8 +61,10 @@ con <- DBI::dbConnect(odbc::odbc(),
                       Port     = 3306)
 }
 ```
-Usando el RMariaDBpaquete
-RMariaDBes una interfaz de base de datos y un controlador MariaDB para R. Esta versión tiene como objetivo el pleno cumplimiento de la especificación DBI , como reemplazo del RMySQL package anterior. Para obtener más información, visite RMariaDB el sitio oficial de: rmariadb.r-dbi.org
+Usando el RMariaDB package
+
+
+RMariaDB es una interfaz de base de datos y un controlador MariaDB para R. Esta versión tiene como objetivo el pleno cumplimiento de la especificación DBI , como reemplazo del RMySQL package anterior. Para obtener más información, visite RMariaDB el sitio oficial de: rmariadb.r-dbi.org
 
 Para instalar desde CRAN:
 
