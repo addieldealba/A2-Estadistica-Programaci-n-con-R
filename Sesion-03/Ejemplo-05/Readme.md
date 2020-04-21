@@ -93,7 +93,7 @@ urldata <- getURL(url)
 data <- readHTMLTable(urldata,
                       stringsAsFactors = FALSE)
 ````
-¡Ten en cuenta que no deseas que las cadenas se registren como factores o variables categóricas! También puedes usar el paquete httr para lograr exactamente lo mismo, excepto por el hecho de que querrás convertir los objetos sin procesar del contenido de la URL en caracteres mediante el rawToChar argumento:
+¡Ten en cuenta que no deseas que las cadenas se registren como factores o variables categóricas! También puedes usar el paquete httr para lograr exactamente lo mismo, excepto por el hecho de que querrás convertir los objetos sin procesar del contenido de la URL en caracteres mediante el argumento rawToChar:
 
 ```{r}
 # Activate `httr`
