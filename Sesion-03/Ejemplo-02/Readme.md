@@ -1,11 +1,11 @@
-`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-00`] > [`Ejemplo-00`] 
+`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-03`] > [`Actividad-02`] 
 
 ### OBJETIVO
 - Integrar Rstudio con BDs mediante librerías, drivers (odbc drivers) ó el connect pane.
 
 #### REQUISITOS
 1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion00/Ejemplo-00`
+1. Usar la carpeta de trabajo `Sesion03/Ejemplo-02`
 
 #### DESARROLLO
 
