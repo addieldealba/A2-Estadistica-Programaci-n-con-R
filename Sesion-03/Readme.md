@@ -18,10 +18,10 @@
 	- [Actividad 02](Ejemplo-02)
 
 - Utilizar dplyr dbplyr para hacer queries a MySQL
-	- [Actividad 04](Ejemplo-03)
+	- [Actividad 03](Ejemplo-03)
 
 - Tomar datos de webAPIs (fetch) desde Rstudio 
-	- [Actividad 05](Ejemplo-04)
+	- [Actividad 04](Ejemplo-04)
 	
 - Postwork
 	- [Postwork](Postwork)
