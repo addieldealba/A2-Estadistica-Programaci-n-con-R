@@ -1,7 +1,7 @@
 `Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-03`] > [`Actividad-05`] 
 
 ### OBJETIVO
-- Tomar datos de url(tablas) y archivos xml y .json (fetch) desde Rstudio.
+- Tomar datos de URL(tablas) y archivos xml y .json (fetch) desde Rstudio.
 
 #### REQUISITOS
 1. Contar con R studio.

@@ -86,7 +86,7 @@ F. Vuelve a tu proyecto de RStudio Cloud y ve a la pestaña Terminal en el panel
 
 Escenario B: extracción de cambios de Git Hub a RStudio Cloud
 
-1. "Commmit" los cambios en Git Hub. Esto se realiza a través de un formulario en la parte inferior de tu archivo en Git Hub: completa una breve descripción de los cambios que está confirmando y selecciona "Confirmar directamente en la rama maestra". Luego haz click en "Confirmar cambios".
+1. "Commit" los cambios en Git Hub. Esto se realiza a través de un formulario en la parte inferior de tu archivo en Git Hub: completa una breve descripción de los cambios que está confirmando y selecciona "Confirmar directamente en la rama maestra". Luego haz click en "Confirmar cambios".
 
 ![RScloud](../images/cloud29.png)
 
