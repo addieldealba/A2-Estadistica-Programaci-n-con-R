@@ -15,7 +15,14 @@ Al final de el `Ejemplo-01` serás capaz de:
 4. Git Bash
 
 
-A. 
+A. Que es Regresión Lineal ? : ´Una regresión lineal es una aproximación lineal de una relación causal entre dos o más variables´ 
+
+
+Proceso para implementar un modelo de regresión lineal:
+1. Obtener datos de un sampleo del origen de la población
+2. Diseñar un modelo que funcione para ese dataset
+3. Hacer predicciónes para toda la población
+4. Tomar en cuenta la variable independiente que llamarémos Y y las independientes: x1,x2,x3,.....,xk
 
 ```r
 library(tidyr)
