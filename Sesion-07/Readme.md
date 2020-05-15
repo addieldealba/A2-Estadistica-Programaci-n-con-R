@@ -9,11 +9,9 @@
 
 #### ORGANIZACION DE LA CLASE 
 
-- Regresión Lineal
+- Regresión Lineal, Correlación vs Regresión
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
-	
-- Correlación vs Regresión
 	- [Ejemplo 02](Ejemplo-02)
 	- [Reto 02](Reto-02)
 	
