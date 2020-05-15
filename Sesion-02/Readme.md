@@ -1,34 +1,41 @@
-## Work: Utilización de Scripts en R con aplicación al análisis de datos desde archivos.
+[`Estadística y Programación con R`](../Readme.md) > [`Programacion con R`] > [`Sesion-02`]  
+
+## Work: Programación: Funciones, Loops y Condiciones en R.
 
 ### OBJETIVOS 
-
-- Entender el concepto de script en R
-- Utilizar un script para análisis de archivos
-- Tomar un data set real y hacer preguntas interesantes sobre los datos
-- Programar funciones para tareas comunes de lectura, escritura  de archivos con loops en R
-- Saber como revisar (debug) un script en R paso a paso
-- Utilizar funciones matemáticas en R 
+- Crear secuencias de código para iterar funciones y automatizar procesos.
+- Crear funciones que reciban parámetros.  
+- Usar la función IF ELSE para crear una variable condicionada al valor de otra.  
+- Usar la función FOR para crear un loop que nos llevara el resultado según la condición por la cual estemos filtrando la información.
+- Aprender a hacer un loop con WHILE.
+- Usar la función unique para obtener los resultados únicos según la condición por la cual estemos filtrando la información.
 
 #### ORGANIZACION DE LA CLASE 
 
-- Creación de un script en R con funciones y argumentos 
+- Manipulación de objetos
 	- [Ejemplo 01](Ejemplo-01)
-
-- Creación de funciones avanzadas con scripts en R
+	- [Reto 01](Reto-01)
+- Librería dplyr y condicionales
 	- [Ejemplo 02](Ejemplo-02)
 	- [Reto 02](Reto-02)
 
-- Funciones paste(), append(), completecases(), rbind()
+- dplyr en una sola instrucción
 	- [Ejemplo 03](Ejemplo-03)
 	- [Reto 03](Reto-03)
 
-- Funciones list.files(), vector(), tipos de acceso a valores en dataframes para correlacion y sus implementaciones cor() en R
+- Funciones, condiciones y loops I
 	- [Ejemplo 04](Ejemplo-04)
+	- [Reto 04](Reto-04)
 
-- Revisar la ejecución y corregir errores en script medante debug
+- Funciones, condiciones y loops II
 	- [Ejemplo 05](Ejemplo-05)
+	- [Reto 05](Reto-05)
+	
+- Funciones, condiciones, loops y función unique
+	- [Ejemplo 06](Ejemplo-06)
+	- [Reto 06](Reto-06)
 
-- miniProyecto
-	- [Presentación de miniProyecto](Proyecto)
-- Postwork
-	- [Postwork](Postwork)
+- [miniProyecto](miniProyecto)
+
+- [Postwork](Postwork)
+

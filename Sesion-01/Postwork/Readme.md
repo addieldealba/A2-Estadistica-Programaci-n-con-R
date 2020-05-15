@@ -1,62 +1,110 @@
-`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-01`] > [`Postwork`] 
+[`Estadística con R`](../Readme.md) > `Sesión 01: Propedéutico de R`
 
-### OBJETIVO  
+### OBJETIVO
 
-- En particular, el objetivo de este postwork es hacer un primer análisis descriptivo de los datos que usarás para tu proyecto personal en este curso. Además instalar e importar lo necesario para comenzar el análisis.  
+Al final del `Postwork` serás capaz de:
+- Utilizar más funcionalidades de dplyr
 
-#### REQUISITOS
-- Cuenta de GitHub  
-- Git Bash  
-- R versión 3.6.2 o mayor                                
-- R Studio versión 1.2.5033 o mayor   
+### REQUISITOS
 
-#### DESARROLLO
+1. Completar el prework
+2. R versión 3.6.2 o mayor
+3. R Studio versión 1.2.5033 o mayor 
+4. Git Bash
 
-Elige algunos de los datos que usarás para tu proyecto en este curso. ¡Es hora de aplicar lo que aprendiste a tus datos!   
+### INSTRUCCIONES
 
-Ya que tienes identificadas las preguntas que puedes responder o predecir a partir de la base de datos que elegiste, empieza a hacer las siguientes acciones:  
+Sigue los siguientes ejercicios para aprender nuevas funcionalidades con dplyr:
 
-0. Lee sobre la función set.seed() en la documentación de la misma ?set.seed
-1. **Importa** el dataset que elegiste a Rstudio para empezar a analizarlo en el siguiente postwork.    
-2. **Instala** los siguientes paquetes que te servirán para manejar y explorar tus datos:  
-- ```library(ggplot2) # te servirá para crear visualizaciones y gráficas``` 
-- ```library(dplyr) # te servirá para un mejor manejo de la data```
-- ```library(tidyr) # te servirá para reestructurar y redefinir la data```    
+- Seleccionar columnas
+- Seleccionar registros
+- Crear nuevas variables
+- Sumarizar datos
+- Ordenar datos
+- Uniones de datos
 
-*Recuerda practicar tus habilidades de investigación y el uso de StackOverflow para encontrar, ya sea, información sobre cómo importar datasets dependiendo del tipo de archivo hasta cómo funciona cada paquete.   
-  
+Como es habitual trabajamos con ejemplos data(iris); 
+```{r} 
+library(dplyr)
+```
+Seleccionar columnas select():
 
-Adicionalmente. realiza algunos ejercicios para reforzar los conocimientos adquiridos sobre condiciones y loops. Podrías aplicarlos a los datos de tu proyecto.
+```{r}
+two.columns <- iris %>%
+select(Sepal.Length,Sepal.Width)
 
-**Ejercicio 1**  
+columns = c(“Sepal.Length”,”Sepal.Width”)
+two.columns <- iris %>%
+select(columns)
+```
+Seleccionar registros filter():
+```{r}
+setosa <- iris %>%
+filter(Species==”setosa”)
 
-Escribe una función con la estructura condicional IF en R que calculé el valor en un punto x de una función deﬁnida por partes, como por ejemplo:
+species_to_select = c(“setosa”,”virginica”)
+species <- iris %>%
+filter(Species %in% species_to_select)
+table(species$Species)
+```
+Crear nuevas variables mutate():
+```{r}
+iris2 <- iris %>%
+mutate(Sepal.Length.6 = ifelse(Sepal.Length >=6, “GE 6”, “LT 6”)) %>%
+mutate(Sepal.Length.rela = Sepal.Length/mean(Sepal.Length))
+```
 
-f(x)={0 si x≤0 , x^2 si x>0 }
+Sumarizar group_by() summarize():
 
-**Ejercicio 2**  
+```{r}
+iris %>% group_by(Species) %>%
+summarize(mean.Sepal.Length = mean(Sepal.Length),
+sd.Sepal.Length = sd(Sepal.Length),
+rows = n())
+```
 
-Utiliza la estructura IF ELSE en R , para implementar una función que haga lo siguiente: La raíz n-ésima (real), depende de si n es par o impar. La fórmula sign(x)*abs(x)^(1/n) sirve para el caso par o el caso impar, excepto en el caso que n sea par y x < 0, es decir, la fórmula sirve si n es impar o x>=0, en otro caso hacer que en la función nos quede(arrojé) una expresión indefinida(NaN).  
+Ordenar datos arrange():
 
-**Ejercicio 3**  
+```{r}
+order1 <- iris %>%
+arrange(Sepal.Length)
+order2 <- iris %>%
+arrange(desc(Sepal.Length))
+```
 
-Genera una función que con la estructura condicional IF ELSEIF ELSE en R para determinar el signo de un número: positivo, negativo o nulo. 
+```{r}
+iris %>% group_by(Species) %>%
+summarize(mean.Sepal.Length = mean(Sepal.Length),
+sd.Sepal.Length = sd(Sepal.Length),
+rows = n()) %>%
+arrange(mean.Sepal.Length)
+```
 
-**Ejercicio 4**  
+Uniones de datos, inner_join():
 
-Escriba un bucle doble FOR que imprima 30 números de los grupos: (1:10, 2:11, 3:12). Esos son tres grupos de diez números cada uno. El primer bucle determina el número de grupos (3) a través de su longitud; el segundo bucle los números que se imprimirán (1 a 10 al principio). Cada grupo comienza un número más alto que el anterior.
+```{r}
+iris2 <- iris %>%
+mutate(id = row_number())
 
-**Ejercicio 5**  
+iris3 <- iris2 %>%
+filter(Species==”setosa”) %>%
+mutate(Sepal.Length.6 = ifelse(Sepal.Length >=6, “GE 6”, “LT 6”)) %>%
+mutate(Sepal.Length.rela = Sepal.Length/mean(Sepal.Length)) %>%
+select(id,Sepal.Length.6,Sepal.Length.rela)
 
-Escribe un ciclo while que imprima números normales aleatorios estándar (que use rnorm (), pero se detiene (breaks) si obtiene un número mayor que 1.  
+iris4 <- iris2 %>% inner_join(iris3, by=c(“id”))
+```
 
-**Ejercicio 6**  
+Left_join():
 
-Escribe un ciclo REPEAT que contenga tres números aleatorios. El ciclo se repite exactamente diez veces antes de detenerse.
+```{r}
+iris5 <- iris2 %>% left_join(iris3, by=c(“id”))
+```
+anti_join():
 
-**Ejercicio 7**  
+```{r}
+iris6 <- iris2 %>% anti_join(iris3)
+```
 
-Combinando el ciclo FOR con la condicional IF: Escriba un bucle for que imprima el Desplazamiento ("disp") del conjunto de datos "mtcars".
-a. Este bucle solo imprimirá observaciones de 160 o más en "disp".
-b. Este bucle se detendrá tan pronto como una observación sea menor que 160 en "disp".
+
 

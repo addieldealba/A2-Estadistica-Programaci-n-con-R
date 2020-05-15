@@ -1,30 +1,36 @@
-## Work: Integración de R con Bases de datos SQL,  MongoDB y datos de dominio público (web URLs)
+[`Estadística y Programación con R`](../Readme.md) > [`Scripts con R`] > [`Sesion-03`]  
+
+## Work: Utilización de Scripts en R con aplicación al análisis de datos desde archivos.
 
 ### OBJETIVOS 
 
-- Rstudio Cloud conectando con un repositorio Git Hub. 
-- Integrar Rstudio con BDs mediante librerías, drivers (odbc drivers). 
-- Integrar Rstudio con MariaDB para MySQL (fetch).
-- Tomar datos de URL(tablas) y archivos xml y .json (fetch) desde Rstudio. 
-- Utilizar dplyr y dbplyr para hacer queries a MySQL.
-- Escribir datos desde MySQL a un data.frame() en Rstudio.  
+- Entender el concepto de script en R
+- Utilizar un script para análisis de archivos
+- Tomar un data set real y hacer preguntas interesantes sobre los datos
+- Programar funciones para tareas comunes de lectura, escritura  de archivos con loops en R
+- Saber como revisar (debug) un script en R paso a paso
+- Utilizar funciones matemáticas en R 
 
 #### ORGANIZACION DE LA CLASE 
 
-- Rstudio Cloud conectando con un repositorio Git Hub. 
-	- [Actividad 01](Ejemplo-01)
+- Creación de un script en R con funciones y argumentos 
+	- [Ejemplo 01](Ejemplo-01)
 
-- Integrar Rstudio con BDs mediante librerías, drivers (odbc drivers)
-	- [Actividad 02](Ejemplo-02)
+- Creación de funciones avanzadas con scripts en R
+	- [Ejemplo 02](Ejemplo-02)
+	- [Reto 02](Reto-02)
 
-- Utilizar dplyr y pool para hacer queries a MySQL
-	- [Actividad 03](Ejemplo-03)
+- Funciones paste(), append(), completecases(), rbind()
+	- [Ejemplo 03](Ejemplo-03)
+	- [Reto 03](Reto-03)
 
-- Utilizar dplyr y DBI para hacer queries a MySQL
-	- [Actividad 04](Ejemplo-04)
+- Funciones list.files(), vector(), tipos de acceso a valores en dataframes para correlacion con la función cor() en R
+	- [Ejemplo 04](Ejemplo-04)
 
-- Tomar datos de URL(tablas), archivos xml y .json (fetch) desde Rstudio 
-	- [Actividad 05](Ejemplo-05)
-	
+- Revisar la ejecución y corregir errores en script medante debug
+	- [Ejemplo 05](Ejemplo-05)
+
+- miniProyecto
+	- [miniProyecto](Proyecto)
 - Postwork
 	- [Postwork](Postwork)

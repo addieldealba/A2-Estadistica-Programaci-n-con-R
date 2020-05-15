@@ -1,15 +1,14 @@
 `Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-02`] > [`Reto-03`] 
+## Dplyr
 
-### OBJETIVO RETO 3
-- Aprenderas a abrir e utilizar archivos con datos en R
-- Aprenderas a utilizar la función complete.cases()
+### OBJETIVO
+- Usar el package dplyr para optimizar codigo 
+- Hacer un recuento de una variable (funcion count) y ordenar por orden alfabetico (funcion arrange)
 
-#### REQUISITOS RETO 3
+#### REQUISITOS
 1. Contar con R studio.
-2. Usar la carpeta de trabajo `Sesion02/Ejemplo-03`
-3. Tener el archivo [DataSet Contaminantes en Aire](../Dataset/rprog_data_specdata.zip) en esta carpeta.
+1. Usar la carpeta de trabajo `Sesion02/Reto-03`
 
-#### RETO 3
-1. Descomprimir el archivo zip :  [DataSet Contaminantes en Aire](../Dataset/rprog_data_specdata.zip) y seleccionar 2 de los archivos, de preferencia el primero 000.csv y 001.csv
-2. Utilizar la funcion complete.cases() con estos dos archivos y almacenar el resultado en un dataframe nuevo de 2x2 (nxn) donde la columna 1 tiene el número o nombre de archivo y la columna 2 la cantidad de casos completos (sin NA) de cada archivo.
+#### DESARROLLO
 
+Sobre la tabla de ecobici que ya estamos trabajando, crearemos un comando optimizado de varias ordenes apoyandote de la funcion %>%. La primera orden sera un recuento de las estaciones que hay en cada colonia (hint: count). A continuacion pediremos que se ordenen alfabeticamente por nombre de la Colonia. 

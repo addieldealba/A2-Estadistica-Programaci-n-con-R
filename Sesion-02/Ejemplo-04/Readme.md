@@ -1,58 +1,26 @@
 `Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-02`] > [`Ejemplo-04`] 
-### OBJETIVO EJEMPLO 4
-- Aprenderas a utilizar la funcion list.files() sin argumentos
-- Aprenderas a utilizar la funcion rbind()
-- Aprenderas a utilizar la seq_along()
-- Aprenderas a utilizar la vector()
-- Aprenderas a utilizar la as.vector()
+## Funciones, condiciones y loops
 
-#### REQUISITOS EJEMPLO 4
+### OBJETIVO
+- Aprender a hacer un loop con IF ELSE 
+
+#### REQUISITOS
 1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion02/Ejemplo-03`
+1. Usar la carpeta de trabajo `Sesion02/Ejemplo-04`
 
-#### DESARROLLO EJEMPLO 4
+#### DESARROLLO
 
-Conocer la funcion la funcion list.files()
+Vamos a crear una un funcion para validar si nuestra variable es superior a 40 
 ```{r}
-?list.files
+variable <- 8
+if (variable > 40){
+  print("La variable es superior a 40")
+} else {
+  print ("La variable no es superior a 40")
+}
 ```
-Utilizar la función list.files() para crear un listado de todos los archivo en: [DataSet Contaminantes en Aire](../Dataset/rprog_data_specdata.zip) en la carpeta /specdata del data set del miniproyecto en zip extraído en tu carpeta de trabajo
+
+Alternativamente, podemos usar la funcion ifelse, que nos ayudara a plantear el resultado a obtener si se cumple la condicion, y a continuacion el resultado a obtener si no se cumple la misma 
 ```{r}
-list.files("/specdata", full.names = TRUE)
-```
-Conocer la funcion rbind() 
-```{r}
-?rbind
-```
-Utilizar la función rbind para juntar filas de dos archivos, pueden ser 001.csv y 002.csv de
-```{r}
-readings = data.frame()
-readings <- rbind(readings, read.csv("001.csv))
-readings <- rbind(readings, read.csv("002.csv))
-```
-Conocer la funcion seq_along 
-```{r}
-?seg_along
-```
-Conocer un ejemplo de implementación de la función seq_along
-```{r}
-for(i in seq_along(id)) {
-		
-	}
-```
-Conocer la funcion vector 
-```{r}
-?vector
-```
-Utilizar la función vector
-```{r}
-new_vector <- vector(mode = "numeric")
-```
-Conocer la funcion as.vector 
-```{r}
-?as.vector
-```
-Utilizar la función as.vector 
-```{r}
-as.vector(new.vector)
-`````
+ifelse(variable>40, "La variable es superior a 40", "La variable no es superior a 40")
+``` 

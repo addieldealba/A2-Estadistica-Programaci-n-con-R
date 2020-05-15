@@ -1,54 +1,54 @@
-`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-01`] > [`Ejemplo-06`] 
-## Funciones, condiciones y loops
+[`Estadística con R`](../Readme.md) > `Sesión 01: Propedéutico de R`
+
+## Columnas tipo factor en un dataframe
 
 ### OBJETIVO
-- Aprender a hacer un loop con WHILE 
 
-#### REQUISITOS
-1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion01/Ejemplo-06`
+Al final de el `Ejemplo-06` serás capaz de:
+- Identificar las columnas que son tipo factor
+- Ordenar las columnas tipo factor
 
-#### DESARROLLO
+### REQUISITOS
 
-#Sintaxis basica de bucle.
-```{r}
-while (test_expression) {
-   statement
-}
+1. Completar el prework
+2. R versión 3.6.2 o mayor
+3. R Studio versión 1.2.5033 o mayor 
+4. Git Bash
+5. Completar el `Ejemplo-05`
+6. Completar el `Reto-05`  
+
+### TEORÍA
+
+Al utilizar la función `str()` para ver la estructura de nuestro dataframe, podemos ver el tipo de columna que es, según el tipo de dato que alberga. Conocemos casi todos, menos el tipo **Factor**. Este aparece cuándo la columna tiene valores categóricos, es decir, que la columna toma uno de distintas posibles categorías. 
+
+Para poder ver los distintos valores de una columna, podemos utilizar `unique()` o `levels()`. 
+
+```r
+getwd()
+setwd('../../Data')
+
+df.dataframe = read.csv('Metro_Interstate_Traffic_Volume.csv')
+
+str(df.dataframe)
+
+# Veamos los distintos niveles de la columna holiday
+unique(df.dataframe$holiday)
+levels(df.dataframe$holiday)
 ```
 
+En este caso, los niveles de la columna factor no están ordenados. Quiere decir que no es capaz de distinguir cuál festividad ocurre primero. Para ordenar una columna podemos hacerlo manualmente de la siguiente manera.
 
-#Creemos una lista de precios que asociaremos a nuestros productos. Iniciaremos por un valor de 20MXN y crearemos una #funcion para que incrementen en 5MXN hasta llegar a un precio de 2500MXN. 
+```r
+# Ordenar niveles
+niveles.orden <- c('Christmas Day','Columbus Day','Independence Day','Labor Day','Martin Luther King Jr Day',
+                       'Memorial Day','New Years Day','None','State Fair', 'Thanksgiving Day', 'Veterans Day',
+                       'Washingtons Birthday')
 
-```{r}
-precio <- 20
+# Agregamos columna con los niveles ordenados
+df.dataframe$holiday_orden <- factor(x = df.dataframe$holiday, levels = niveles.orden, ordered = TRUE)
 
-while(precio <= 2500){
-  print(precio)
-  precio <- precio + 5 
-}
+# Veamos que cambió en nuestro dataframe
+str(df.dataframe)
 
+unique(df.dataframe$holiday_orden)
 ```
-
-
-# Iterar un array de cadenas.
-```{r}
-v <- c("Hello","while loop")
-cnt <- 2
-
-while (cnt < 7) {
-   print(v)
-   cnt = cnt + 1
-}
-```
-
-# Estructura de control dentro de ciclo While.
-```{r}
-x <- 0
-while(x < 5){
-  x <- x+1;
-  if (x == 3)
-    next; 
-  print(x);
-  }
-  ```

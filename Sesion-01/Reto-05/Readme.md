@@ -1,22 +1,29 @@
-`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-02`] > [`Reto-05`] 
-## Funciones, condiciones y loops
+ 
+[`Estadística con R`](../Readme.md) > `Sesión 01: Propedéutico de R`
+
+## Crear funciones
 
 ### OBJETIVO
-- Usar la funcion for para crear un loop que nos llevara el resultado segun la condicion por la cual estemos filtrando la informacion
 
-#### REQUISITOS
-1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion01/Reto-05`
+Al final de el `Reto-05` serás capaz de:
+- Crear una función
+- Llamar a la función que creaste
 
-#### DESARROLLO
-### Utilizando el Dataset de airquality.
+### REQUISITOS
 
-- Investigar el detalle de cada columna del DataSet.
+1. Completar el prework
+2. R versión 3.6.2 o mayor
+3. R Studio versión 1.2.5033 o mayor 
+4. Git Bash
 
-- Utilizando ciclo For y la sentencia IF/ELSE; 
-    * Contar cuantos días el promedio de velocidad del aire es: Mayor a 7, Menor a 4 y 
-      cuántos registros existen dentro de ese rango(4-7). 
-    
-- Calcular el promedio total de la Columna Temp.
+### INSTRUCCIONES DEL RETO
 
-  
+- Crea una función que reciba de argumento un nombre y devuelve 'Bienvenido -nombre', ponle a la función el nombre de `welcome` 
+- Pruebala con tu nombre
+- Pide ayuda con la función readline, es decir corre `?readline`
+- Explica que hace el siguiente código:
+```r
+nombre <- readline(prompt = '¿Cuál es tu nombre?')
+welcome(nombre)
+```
+- Modifica tu función `welcome` para que, además de nombre, pida edad. Ahora, debera regresar 'Bienvenido -nombre- con -edad- años'. Esta nueva función se debe llamar welcome.2

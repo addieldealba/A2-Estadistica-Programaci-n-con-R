@@ -1,69 +1,88 @@
-`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-03`] > [`Actividad-03`] 
+`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-03`] > [`Ejemplo-03`] 
 
-### OBJETIVO
-- Utilizar dplyr y pool para hacer queries a MySQL.
+### OBJETIVO EJEMPLO 3
+- Aprenderás a utilizar la funcion paste()
+- Aprenderás a crear funciones con el argumento ...
+- Aprenderás a crear operadores personalizados en R
+- Conocerás la función complete.cases() y append()
 
-#### REQUISITOS
+#### REQUISITOS EJEMPLO3
 1. Contar con R studio.
 1. Usar la carpeta de trabajo `Sesion03/Ejemplo-03`
 
-#### DESARROLLO
+#### DESARROLLO EJEMPLO3
 
-#### Utilizar dplyr y pool para hacer queries a MySQL
+Conozcamos la funtion paste(), para ver su hoja de específicacion teclea ?paste, veremos su funcionamiento con un ejercicio:
+Como puedes ver, el primer argumento de paste() es `...`, que se conoce como puntos suspensivos o simplemente punto-punto-punto. Los puntos suspensivos permiten pasar un número indefinido de argumentos a un función. En el caso de paste() se puede pasar cualquier número de cadenas como argumentos y paste() devolverá todas las cadenas combinadas en una sola cadena.
 
-Hay cuatro paquetes que necesitas en esta actividad. Aquí están las instrucciones de instalación, para que tu código funcione sin problemas:
+Solo para ver cómo funciona paste (), escribe paste("Programming", "is", "fun!")
+```{r}
+paste("Programming", "is", "fun!")
+```
+Hagamos el siguiente ejemplo para ilustar la función paste(): Los telegramas solían estar salpicados con las palabras START y STOP para demarcar el comienzo y el final de las oraciones. Escribe una función a continuación llamada telegram que formatea oraciones para telegramas.
+Por ejemplo, la expresión `telegram(" Good "," morning ")` debe evaluarse como:
+"START Good morning STOP"
 
 ```{r}
-# get DBI, dplyr and dbplyr from CRAN
-install.packages("shiny")
-install.packages("DBI")
-install.packages("dplyr")
-install.packages("dbplyr")
-
-# get pool from GitHub, since it's not yet on CRAN
-devtools::install_github("rstudio/pool")
+telegram <- function(...){
+ #escribe tu código aquí
+}
 ```
-#### Visión general
-
-A medida que las aplicaciones crecen y se vuelven más complejas, un problema recurrente ha sido el de integrar una base de datos externa en una aplicación. Si bien esto ya es posible, hasta ahora depende principalmente de los autores de la aplicación averiguar el controlador de base de datos apropiado para R y cómo administrar las conexiones de la base de datos dentro de la propia aplicación. 
-
-En particular, cubriremos:
-
-- Cómo usar el paquete dplyr para leer datos de una base de datos externa;
-
-Ten en cuenta que no siempre es ideal vincular a una base de datos externa, ya que puede fallar y ciertamente es más costoso desde el punto de vista computacional que tratar con datos locales. Además de trabajar con datos locales en memoria almacenados en marcos de datos, dplyr también trabaja con datos remotos en disco almacenados en bases de datos. Esto es particularmente útil en este escenario:
-
-- Tus datos ya están en una base de datos. Tienes tantos datos que no caben todos en la memoria simultáneamente y necesitas usar algún motor de almacenamiento externo. (Si tus datos encajan en la memoria, no hay ninguna ventaja en ponerlos en una base de datos: solo será más lento y más frustrante).
-
-#### La forma más fácil de conectarse a una base de datos externa desde tu aplicación es utilizarla dplyr. 
-
-La motivación para admitir bases de datos en dplyr es que nunca extrae el subconjunto o agregado correcto de la base de datos la primera vez, y generalmente debe iterar entre R y SQL muchas veces antes de obtener el conjunto de datos perfecto. Cambiar entre lenguajes es un desafío cognitivo (especialmente porque R y SQL son muy similares), por lo que dplyr te permite escribir código R que se traduce automáticamente a SQL. El objetivo de dplyr no es reemplazar todas las funciones SQL con una función R: eso sería difícil y propenso a errores. En cambio, dplyr solo genera sentencias SELECT, el SQL que escribe con mayor frecuencia como analista.
-
-Aquí te mostramos cómo leer las primeras cinco filas de una tabla desde una base de datos remota:
-
+Exploremos cómo "desempaquetar" argumentos de puntos suspensivos cuando usas el elipses como argumento en una función. A continuación tengo una función de ejemplo que se supone que agrega dos argumentos con nombres explícitos llamados alfa y beta.
 ```{r}
-library(pool)
-library(dplyr)
-
-my_db <- dbPool(
-  RMySQL::MySQL(), 
-  dbname = "shinydemo",
-  host = "shiny-demo.csa7qlmguqrf.us-east-1.rds.amazonaws.com",
-  username = "guest",
-  password = "guest"
-)
-
-# get the first 5 rows:
-my_db %>% tbl("City") %>% head(5)
-## # Source:   lazy query [?? x 5]
-## # Database: mysql 10.0.17-MariaDB [guest@shiny-demo.csa7qlmguqrf.us-east-1.rds.amazonaws.com:/shinydemo]
-##      ID           Name CountryCode      District Population
-##   <dbl>          <chr>       <chr>         <chr>      <dbl>
-## 1     1          Kabul         AFG         Kabol    1780000
-## 2     2       Qandahar         AFG      Qandahar     237500
-## 3     3          Herat         AFG         Herat     186800
-## 4     4 Mazar-e-Sharif         AFG         Balkh     127800
-## 5     5      Amsterdam         NLD Noord-Holland     731200
-
+add_alpha_and_beta <- función (...) {
+# Primero debemos capturar los puntos suspensivos dentro de una lista
+# y luego asigne la lista a una variable. Vamos a nombrar esto
+# variable `args`.
+args <- list (...)
+#  Ahora vamos a suponer que hay dos argumentos con nombre dentro de los argumentos
+#  con los nombres `alpha` y` beta.` Podemos extraer argumentos con nombre de
+#  la lista de argumentos utilizando el nombre del argumento y los corchetes dobles. los
+#  ¡La variable  `args` es solo una lista regular después de todo!
+alpha <- args [["alpha"]]
+beta <- args [["beta"]]
+# Luego devolvemos la suma de alfa y beta. 
+alpha + beta
+}
 ```
-Como puedes ver, es bastante sencillo.
+¿Alguna vez has jugado Mad Libs antes? La siguiente función construirá un oración de partes del discurso que proporcionas como argumentos. Escribiremos más de la función, pero necesitará desempaquetar los argumentos apropiados del elipses.
+```{r}
+mad_libs <- function(...){
+  # Haz el desempaquetamiento aquí
+  
+  # No modificar el código abajo
+  # Recuerda crear las variables necesarias
+  paste("News from", place, "today where", adjective, "students took to the streets in protest of the new", noun, "being installed on campus.")
+}
+```
+Es hora de usar tu función mad_libs. Asegúrate de nombrar el lugar, el adjetivo y los argumentos sustantivos para que tu función funcione.
+```{r}
+mad_libs("mad","as","it can be") # por ejemplo
+```
+Estás familiarizado con sumar, restar, multiplicar y dividir números en R. Para hacer esto,use los símbolos +, -, * y /. Estos símbolos se llaman operadores binarios porque toman dos entradas, una entrada desde la izquierda y una entrada desde la derecha. 
+En R puede definir sus propios operadores binarios. En el próximo ejemplo te mostrarémos cómo.
+
+Digamos que querías definir un operador binario que multiplicara dos números y luego agregó uno al producto. A continuación se muestra una implementación de ese operador:
+```{r}
+"%mult_add_one%" <- función (izquierda, derecha) {
+#¡Observe las dobles comillas! 
+izquierda * derecha + 1
+}
+```
+Entonces podrías usar este operador binario como `4 %mult_add_one% 5` que evalua a 21.
+
+¡Escribe tu propio operador binario a continuación desde cero! Tu operador debe llamarse %p% para que la expresión:
+```{r}
+"Buen" %p% "trabajo!"
+```
+evalué a: "Buen trabajo!"
+
+Ahora conoceremos la funcion append() con ?append
+```{r}
+?append
+```
+Ahora conoceremos la funcion complete.cases() con ?complete.cases
+```{r}
+?complete.cases
+```
+

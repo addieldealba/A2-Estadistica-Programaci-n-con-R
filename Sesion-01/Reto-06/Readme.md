@@ -1,12 +1,24 @@
-`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-01`] > [`Reto-06`] 
-## Funciones, condiciones y loops
+[`Estadística con R`](../Readme.md) > `Sesión 01: Propedéutico de R` 
+
+## Estructura de dataframe
 
 ### OBJETIVO
-- Usar la funcion unique para crear un obtener los resultados unicos segun la condicion por la cual estemos filtrando la informacion
 
-#### REQUISITOS
-1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion01/Reto-06`
+Al final de el `Reto-06` serás capaz de:
+- Leer un dataframe
+- Identificar el tipo de cada columna
 
-#### DESARROLLO
-Seguimos trabajando con la base de ecobici. Ahora queremos comprobar la consistencia entre nombres de Colonias y Codigos Postales. Para ello, usaremos la funcion unique, y llevaremos todos los posibles Codigos Postales de aquellas colonias que se llamen "Roma Norte".
+### REQUISITOS
+
+1. Completar el prework
+2. R versión 3.6.2 o mayor
+3. R Studio versión 1.2.5033 o mayor 
+4. Git Bash
+
+### INSTRUCCIONES DEL RETO
+
+- Lee el archivo [Metro_Interstate_Traffic_Volume.csv](../../Data/Metro_Interstate_Traffic_Volume.csv)
+- Ve la estructura del dataframe
+- ¿Cuáles son los niveles de la columna weather_main?
+- Reordena los niveles alfabéticamente
+- Agrega una columna llamada weather_main_ordered al dataframe, donde los niveles estén ordenados

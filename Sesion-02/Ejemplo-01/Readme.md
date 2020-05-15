@@ -1,6 +1,11 @@
 `Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-02`] > [`Ejemplo-01`] 
+
+## Manipulación de objetos
+
 ### OBJETIVO
-- Generar un script en R con tareas complejas implementadas mediante funciones
+- Aprenderas a cargar un dataset
+- Aprenderas a mostrar un resumen estadistico del dataset
+- Aprenderas a manipular objetos del data set
 
 #### REQUISITOS
 1. Contar con R studio.
@@ -8,42 +13,46 @@
 
 #### DESARROLLO
 
-Limpiamos el workspace como buena práctica de programación:
-```{r}
-rm(list=ls())
-```
-Como ya conocemos, así es como se define una función en R:
-```{r}
-function_name <- function(arg1, arg2)
-{
-#	Manipular argumentos arg1 y arg2 de cierta forma y regresar un valor
-}
-```
-Crea una funcion sencilla que regrese el valor del argumento:  
-```{r}
-boring_function <- function(x) {
-  x
-}
-```
-Si desea ver el código fuente de cualquier función, solo escriba el nombre de la función sin argumentos ni paréntesis. Probemos esto con la función que acaba de crear. Teclea: boring_function para ver su código fuente.
-```{r}
-boring_function
-```
 
-### Ahora hagamos un Script con R
+1. Cargamos el csv de **mtcars**  
 
-Para esto hay que abrir el editor de scripts con un script nuevo:
-![RScript](../images/RScript.png)
 
-Ahora vamos a replicar la funcionalidad de la funcion mean(), creando nuestra propia función que haga lo mismo que mean()
-```{r}
-my_mean <- function(my_vector) {
-  sum(my_vector)/length(my_vector)
-  # Recuerda: la ultima expresion evaluada es lo que regresa R en sus funciones
-}
-```
-En el script, probemos que la función haga el promedio pasandolé un vector de prueba c(2,4,5) y verifiquemos el resultado.
-```{r}
-my_mean(c(2,4,5))
-```
-Las funciones generalmente toman argumentos que son variables sobre las que opera la función. Por ejemplo, la función mean() toma un vector como argumento, como en el caso de my_mean(c(2,6,8)). La función my_mean() suma todos los números en el vector y divide esa suma por la longitud del vector. Si le pasas algún otro argumento no olvides el concepto e implementacion de coercion en R!
+2. Usaremos el comando **str** para desplegar la estructura del dataset e identificar los valores **int** que podrían ser variables de tipo lógico, desplegaremos el valor de los objetos con **class**
+	
+		str(mtcars)
+		class(mtcars$vs)
+	
+ 	![](img/3.png)
+ 	
+3. Cambiaremos las variables con valores 1 y 0, por un tipo de dato logico con el siguiente método **as.logical(dataset$variable)**
+
+	
+		mtcars$vs = as.logical(mtcars$vs)
+		mtcars$am = as.logical(mtcars$am)
+		class(mtcars$vs)
+		class(mtcars$am)
+	
+	![](img/4.png)
+	
+4. Usaremos el comando **Summary** para mostrar un resumen estadistico del DataSet	
+		
+		summary(mtcars)
+		
+	
+	![](img/5.png)
+	
+5. Como podemos observar la variable **wt** se encuentra en libras, por lo cual transformaremos su valor a Kilos
+	
+		wt <- (mtcars$wt*1000/2.204623)
+		wt
+	
+	![](img/6.png)
+	
+	
+6. Se podrá observar que los valores en el dataset no han cambiado, por lo cual tendremos que usar el **transform()** para realizar adecuadamente el cambio de valor.
+
+		mtcars.new <- transform(mtcars, wt = wt * 1000 / 2.204623)
+		summary(mtcars)
+	
+	![](img/6.png)
+

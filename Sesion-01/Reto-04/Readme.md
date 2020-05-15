@@ -1,17 +1,25 @@
-`Estadistica-Programacion-con-R` > [`Programacion con R`] > [`Sesion-01`] > [`Reto-04`] 
-## Funciones, condiciones y loops
+[`Estadística con R`](../Readme.md) > `Sesión 01: Propedéutico de R`
+
+## Vectores
 
 ### OBJETIVO
-- Crear funciones que reciban parametros.
-- Crear nuevas variables 
-- Usar la funcion ifelse para crear una variable condicionada al valor de otra 
 
-#### REQUISITOS
-1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion01/Reto-04`
+Al final de el `Reto-04` serás capaz de:
+- Leer un archivo que tienes en local
 
-#### DESARROLLO
+### REQUISITOS
 
- Crear una función que reciba un array de numeros positivos y utilizando if/else 
- determine cual es el valor mayor en el array
+1. Completar el prework
+2. R versión 3.6.2 o mayor
+3. R Studio versión 1.2.5033 o mayor 
+4. Git Bash
+
+### INSTRUCCIONES DEL RETO
+
+- Imprime tu working directory
+- Si es necesario, cambia la ruta a la carpeta Data
+- Lee el archivo [Retail_Store.csv](../../Data/Retail_Store.csv)
+- Guarda el nuevo dataframe como dataframe.retail
+
+
 
