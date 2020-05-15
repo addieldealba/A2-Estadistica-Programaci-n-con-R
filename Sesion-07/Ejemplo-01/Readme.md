@@ -22,7 +22,17 @@ Proceso para implementar un modelo de regresión lineal:
 1. Obtener datos de un sampleo del origen de la población
 2. Diseñar un modelo que funcione para ese dataset
 3. Hacer predicciónes para toda la población
-4. Tomar en cuenta la variable independiente que llamarémos Y y las independientes: x1,x2,x3,.....,xk
+4. Tomar en cuenta la variable independiente que llamarémos Y(predicción) y las independientes: x1,x2,x3,.....,xk (predictoras)
+
+La variable dependiente Y es una función de las variables independientes x1 a xk, el modelo más sencillo es el de Regresión lineal Simple que se define mediante la función Y = B0 + B1x1 + e , veamos que son estos valores:
+
+Y = variable dependiente,
+X1= variable independiente
+B0=desfaze de la curva lineal
+B1=parametro que afecta más a x
+e= error de estimación (ajuste)
+
+Veamos un ejemplo conceptual, el ingreso laboral: En este caso el ingreso salarial es Y, el x1 es los años de educación, por lo tanto podemos ver la relación lineal entre más educación x1 , mayor ingreo salarial, multiplicado por algunos parametros y un desfaze de la curva B1 y B0 respectivamente. En este caso podríamos pensar en B0 como el salario mínimo si no se cuenta con educación.
 
 ```r
 library(tidyr)
